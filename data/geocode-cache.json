@@ -1,0 +1,4447 @@
+{
+  "栃木市万町11-16": {
+    "lat": 36.3828846,
+    "lng": 139.7336148,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１１−１６",
+    "partialMatch": false
+  },
+  "栃木市万町14-2": {
+    "lat": 36.3831157,
+    "lng": 139.7336327,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１４−２",
+    "partialMatch": false
+  },
+  "栃木市万町15-24": {
+    "lat": 36.3831402,
+    "lng": 139.7345405,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１５−２４",
+    "partialMatch": false
+  },
+  "栃木市万町15-25": {
+    "lat": 36.3829912,
+    "lng": 139.7344272,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１５−２５",
+    "partialMatch": false
+  },
+  "栃木市万町16-1": {
+    "lat": 36.3828569,
+    "lng": 139.7349581,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１６−１",
+    "partialMatch": false
+  },
+  "栃木市万町16-4": {
+    "lat": 36.3831703,
+    "lng": 139.7351554,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１６−４",
+    "partialMatch": false
+  },
+  "栃木市万町16-8": {
+    "lat": 36.3837258,
+    "lng": 139.7353993,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１６−８ 蔵の街ハイツ",
+    "partialMatch": false
+  },
+  "栃木市万町16-8 蔵の街ハイツ102": {
+    "lat": 36.3837258,
+    "lng": 139.7353993,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１６−８ 蔵の街ハイツ 102",
+    "partialMatch": false
+  },
+  "栃木市万町16-8 蔵の街ハイツ202号": {
+    "lat": 36.3837258,
+    "lng": 139.7353993,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町１６−８ 蔵の街ハイツ 202",
+    "partialMatch": false
+  },
+  "栃木市万町2-13": {
+    "lat": 36.3813602,
+    "lng": 139.7331255,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町２−１３",
+    "partialMatch": false
+  },
+  "栃木市万町20-5": {
+    "lat": 36.3826143,
+    "lng": 139.7357194,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町２０−５",
+    "partialMatch": false
+  },
+  "栃木市万町24-18": {
+    "lat": 36.3811344,
+    "lng": 139.7369347,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町２４−１８",
+    "partialMatch": false
+  },
+  "栃木市万町24－3": {
+    "lat": 36.3811338,
+    "lng": 139.7367374,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町２４−３ 24番地3",
+    "partialMatch": false
+  },
+  "栃木市万町3-19": {
+    "lat": 36.3809343,
+    "lng": 139.7339102,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町３−１９",
+    "partialMatch": false
+  },
+  "栃木市万町3-22": {
+    "lat": 36.3806595,
+    "lng": 139.7336823,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町３−２２",
+    "partialMatch": false
+  },
+  "栃木市万町31-19": {
+    "lat": 36.3840144,
+    "lng": 139.7381431,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町３１−１９",
+    "partialMatch": false
+  },
+  "栃木市万町4-1": {
+    "lat": 36.3803834,
+    "lng": 139.7341919,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町４−１",
+    "partialMatch": false
+  },
+  "栃木市万町4-1 とちぎ蔵の街観光館 交流館1F": {
+    "lat": 36.3803068,
+    "lng": 139.734051,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町４−１",
+    "partialMatch": true
+  },
+  "栃木市万町5-2": {
+    "lat": 36.3808085,
+    "lng": 139.7347064,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町５−２",
+    "partialMatch": false
+  },
+  "栃木市万町5-3": {
+    "lat": 36.3810347,
+    "lng": 139.7343697,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町５−３",
+    "partialMatch": false
+  },
+  "栃木市万町6-11": {
+    "lat": 36.3817457,
+    "lng": 139.7347464,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町６−１１",
+    "partialMatch": false
+  },
+  "栃木市万町6-17": {
+    "lat": 36.3812116,
+    "lng": 139.7346917,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町６−１７",
+    "partialMatch": false
+  },
+  "栃木市万町9-25": {
+    "lat": 36.3826225,
+    "lng": 139.7341147,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町９−２５",
+    "partialMatch": false
+  },
+  "栃木市万町４−３": {
+    "lat": 36.3807071,
+    "lng": 139.7342596,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0015 栃木県栃木市万町４−３",
+    "partialMatch": false
+  },
+  "栃木市今泉町1-1-1": {
+    "lat": 36.3809287,
+    "lng": 139.7487409,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町１丁目１−１",
+    "partialMatch": false
+  },
+  "栃木市今泉町1-3-34": {
+    "lat": 36.3850341,
+    "lng": 139.7486459,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町１丁目３−３４",
+    "partialMatch": false
+  },
+  "栃木市今泉町1-4-26": {
+    "lat": 36.3856555,
+    "lng": 139.7478812,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町１丁目４−２６",
+    "partialMatch": false
+  },
+  "栃木市今泉町1-5-11": {
+    "lat": 36.3869781,
+    "lng": 139.7481232,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町１丁目５−１１ コープ 栃木店",
+    "partialMatch": false
+  },
+  "栃木市今泉町1-5-27": {
+    "lat": 36.3861022,
+    "lng": 139.7477313,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町１丁目５−２７",
+    "partialMatch": false
+  },
+  "栃木市今泉町1-8-4": {
+    "lat": 36.390144,
+    "lng": 139.7470216,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町１丁目８−４",
+    "partialMatch": false
+  },
+  "栃木市今泉町2-8-43": {
+    "lat": 36.3874005,
+    "lng": 139.7472118,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町２丁目８−４３",
+    "partialMatch": false
+  },
+  "栃木市今泉町2-8-51": {
+    "lat": 36.38724860000001,
+    "lng": 139.7476679,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町２丁目８−５１",
+    "partialMatch": false
+  },
+  "栃木市今泉町2丁目13-28": {
+    "lat": 36.3815281,
+    "lng": 139.7482275,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町２丁目１３−２８",
+    "partialMatch": false
+  },
+  "栃木市今泉町2丁目16-23": {
+    "lat": 36.3843897,
+    "lng": 139.747001,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0027 栃木県栃木市今泉町２丁目１６",
+    "partialMatch": false
+  },
+  "栃木市仲方町173-1": {
+    "lat": 36.4242256,
+    "lng": 139.6891832,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0132 栃木県栃木市仲方町１７３−１",
+    "partialMatch": false
+  },
+  "栃木市倭町10-1": {
+    "lat": 36.3779681,
+    "lng": 139.7337918,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１０−１",
+    "partialMatch": false
+  },
+  "栃木市倭町10-3": {
+    "lat": 36.378223,
+    "lng": 139.7335404,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１０−３",
+    "partialMatch": false
+  },
+  "栃木市倭町10-7": {
+    "lat": 36.3783216,
+    "lng": 139.7338925,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１０−７",
+    "partialMatch": false
+  },
+  "栃木市倭町10番2号": {
+    "lat": 36.3780718,
+    "lng": 139.7336571,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１０−２",
+    "partialMatch": false
+  },
+  "栃木市倭町11-4": {
+    "lat": 36.3789915,
+    "lng": 139.7337187,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１１−４",
+    "partialMatch": false
+  },
+  "栃木市倭町13-2": {
+    "lat": 36.3797981,
+    "lng": 139.734204,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１３−２",
+    "partialMatch": false
+  },
+  "栃木市倭町2-19 Y&Mラフィネス102": {
+    "lat": 36.3786515,
+    "lng": 139.7317275,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町２−１９",
+    "partialMatch": true
+  },
+  "栃木市倭町5-17": {
+    "lat": 36.3793864,
+    "lng": 139.7333521,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町５−１７",
+    "partialMatch": false
+  },
+  "栃木市倭町6-22": {
+    "lat": 36.3787078,
+    "lng": 139.7331786,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町６−２２",
+    "partialMatch": false
+  },
+  "栃木市倭町6-3": {
+    "lat": 36.3786948,
+    "lng": 139.7329113,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町６−３",
+    "partialMatch": false
+  },
+  "栃木市倭町6-4": {
+    "lat": 36.3787489,
+    "lng": 139.7327263,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町６−４",
+    "partialMatch": false
+  },
+  "栃木市倭町6-5": {
+    "lat": 36.3788023,
+    "lng": 139.7325628,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町６−５",
+    "partialMatch": false
+  },
+  "栃木市倭町6-8": {
+    "lat": 36.3789648,
+    "lng": 139.7322003,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町６−８",
+    "partialMatch": false
+  },
+  "栃木市倭町7-13": {
+    "lat": 36.378608,
+    "lng": 139.7321016,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町７−１３",
+    "partialMatch": false
+  },
+  "栃木市倭町7-14": {
+    "lat": 36.378591,
+    "lng": 139.7320731,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町７−１４",
+    "partialMatch": false
+  },
+  "栃木市倭町7-18": {
+    "lat": 36.3784942,
+    "lng": 139.7327309,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町７−１８",
+    "partialMatch": false
+  },
+  "栃木市倭町１４－２": {
+    "lat": 36.3800174,
+    "lng": 139.7339455,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0037 栃木県栃木市倭町１４−２",
+    "partialMatch": false
+  },
+  "栃木市入舟町15-2": {
+    "lat": 36.3816569,
+    "lng": 139.7322861,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0016 栃木県栃木市入舟町１５−２",
+    "partialMatch": false
+  },
+  "栃木市入舟町16－11": {
+    "lat": 36.3827832,
+    "lng": 139.7326952,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0016 栃木県栃木市入舟町１６−１１",
+    "partialMatch": false
+  },
+  "栃木市出流町179": {
+    "lat": 36.4721171,
+    "lng": 139.59523,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0206 栃木県栃木市出流町１７９",
+    "partialMatch": false
+  },
+  "栃木市出流町943-1": {
+    "lat": 36.4756252,
+    "lng": 139.5944755,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0206 栃木県栃木市出流町９４３−１",
+    "partialMatch": false
+  },
+  "栃木市千塚町297": {
+    "lat": 36.418966,
+    "lng": 139.6913428,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0135 栃木県栃木市千塚町２９７",
+    "partialMatch": false
+  },
+  "栃木市吹上町1219-1": {
+    "lat": 36.410612,
+    "lng": 139.7020871,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0125 栃木県栃木市吹上町１２１９−１",
+    "partialMatch": false
+  },
+  "栃木市吹上町163-1": {
+    "lat": 36.4127885,
+    "lng": 139.7165937,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0125 栃木県栃木市吹上町１６３−１",
+    "partialMatch": false
+  },
+  "栃木市吹上町1646-6": {
+    "lat": 36.4118821,
+    "lng": 139.705348,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0125 栃木県栃木市吹上町１６４６−６",
+    "partialMatch": false
+  },
+  "栃木市吹上町206": {
+    "lat": 36.4118757,
+    "lng": 139.7163275,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0125 栃木県栃木市吹上町２０６",
+    "partialMatch": false
+  },
+  "栃木市吹上町793-2": {
+    "lat": 36.408877,
+    "lng": 139.7041011,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0125 栃木県栃木市吹上町７９３−２",
+    "partialMatch": false
+  },
+  "栃木市嘉右衛門町2-2": {
+    "lat": 36.3869979,
+    "lng": 139.7339892,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0072 栃木県栃木市嘉右衛門町２−２",
+    "partialMatch": false
+  },
+  "栃木市嘉右衛門町3-20": {
+    "lat": 36.3889518,
+    "lng": 139.7345725,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0072 栃木県栃木市嘉右衛門町３−２０",
+    "partialMatch": false
+  },
+  "栃木市嘉右衛門町4ー6": {
+    "lat": 36.3898407,
+    "lng": 139.7345478,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0072 栃木県栃木市嘉右衛門町４−６",
+    "partialMatch": false
+  },
+  "栃木市嘉右衛門町5-22": {
+    "lat": 36.3900729,
+    "lng": 139.7342083,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0072 栃木県栃木市嘉右衛門町５−２２",
+    "partialMatch": false
+  },
+  "栃木市嘉右衛門町5番27号": {
+    "lat": 36.3893634,
+    "lng": 139.73385,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0072 栃木県栃木市嘉右衛門町５−２７",
+    "partialMatch": false
+  },
+  "栃木市嘉右衛門町9-18": {
+    "lat": 36.3884307,
+    "lng": 139.7335737,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0072 栃木県栃木市嘉右衛門町９−１８",
+    "partialMatch": false
+  },
+  "栃木市国府町538-10": {
+    "lat": 36.3952122,
+    "lng": 139.7666413,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0006 栃木県栃木市国府町５３８−１０",
+    "partialMatch": false
+  },
+  "栃木市園部町1-18-7": {
+    "lat": 36.382851,
+    "lng": 139.7175851,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町１丁目１８−７",
+    "partialMatch": false
+  },
+  "栃木市園部町1-21-25": {
+    "lat": 36.3836994,
+    "lng": 139.7166235,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町１丁目２１−２５",
+    "partialMatch": false
+  },
+  "栃木市城内店2-23-6": {
+    "lat": 36.3708489,
+    "lng": 139.7491998,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２０−２０",
+    "partialMatch": true
+  },
+  "栃木市城内町1-11-12": {
+    "lat": 36.3767184,
+    "lng": 139.7431972,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町１丁目１１−１２",
+    "partialMatch": false
+  },
+  "栃木市城内町1-14-6": {
+    "lat": 36.3751275,
+    "lng": 139.7448496,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町１丁目１４−６",
+    "partialMatch": false
+  },
+  "栃木市城内町2-13-46": {
+    "lat": 36.3752246,
+    "lng": 139.749172,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目１３−４６",
+    "partialMatch": false
+  },
+  "栃木市城内町2-15-1": {
+    "lat": 36.3750794,
+    "lng": 139.7517971,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目１５−１",
+    "partialMatch": false
+  },
+  "栃木市城内町2-2-17": {
+    "lat": 36.3733765,
+    "lng": 139.7394633,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２−１７",
+    "partialMatch": false
+  },
+  "栃木市城内町2-2-23": {
+    "lat": 36.373733,
+    "lng": 139.7401423,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２−２３",
+    "partialMatch": false
+  },
+  "栃木市城内町2-23-3": {
+    "lat": 36.3712187,
+    "lng": 139.7486181,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２３−３",
+    "partialMatch": false
+  },
+  "栃木市城内町2-23-6": {
+    "lat": 36.3716228,
+    "lng": 139.7486209,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２３−６ 204",
+    "partialMatch": false
+  },
+  "栃木市城内町2-24-52": {
+    "lat": 36.3718462,
+    "lng": 139.7467834,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２４−５２",
+    "partialMatch": false
+  },
+  "栃木市城内町2-32-4": {
+    "lat": 36.3683906,
+    "lng": 139.741386,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目３２−４",
+    "partialMatch": false
+  },
+  "栃木市城内町2-39-2": {
+    "lat": 36.3704896,
+    "lng": 139.7485403,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目３９−２",
+    "partialMatch": false
+  },
+  "栃木市城内町2-40-1": {
+    "lat": 36.3703529,
+    "lng": 139.7493825,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目４０−１",
+    "partialMatch": false
+  },
+  "栃木市城内町2-44-37": {
+    "lat": 36.3669239,
+    "lng": 139.7513127,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目４４",
+    "partialMatch": false
+  },
+  "栃木市城内町2-6-23": {
+    "lat": 36.372746,
+    "lng": 139.7450066,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目６−２３",
+    "partialMatch": false
+  },
+  "栃木市城内町2丁目2-7": {
+    "lat": 36.3735325,
+    "lng": 139.7378867,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目２−７",
+    "partialMatch": false
+  },
+  "栃木市城内町2丁目6-23": {
+    "lat": 36.372746,
+    "lng": 139.7450066,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目６−２３",
+    "partialMatch": false
+  },
+  "栃木市城内町2丁目7-61": {
+    "lat": 36.374418,
+    "lng": 139.746003,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目７−６１",
+    "partialMatch": false
+  },
+  "栃木市城内町2丁目727-1": {
+    "lat": 36.3694896,
+    "lng": 139.7460429,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0033 栃木県栃木市城内町２丁目",
+    "partialMatch": false
+  },
+  "栃木市境町1-20": {
+    "lat": 36.372969,
+    "lng": 139.7312839,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１−２０ Salon de Riz",
+    "partialMatch": false
+  },
+  "栃木市境町1-22": {
+    "lat": 36.3725913,
+    "lng": 139.7310188,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１−２２ MKビル",
+    "partialMatch": false
+  },
+  "栃木市境町1-8F1ビル103": {
+    "lat": 36.3725299,
+    "lng": 139.7307353,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１ さえぐさビル",
+    "partialMatch": true
+  },
+  "栃木市境町10-5": {
+    "lat": 36.3735718,
+    "lng": 139.7305551,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１０−５ １０番５号",
+    "partialMatch": false
+  },
+  "栃木市境町11-13": {
+    "lat": 36.3735457,
+    "lng": 139.7300635,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１１−１３",
+    "partialMatch": false
+  },
+  "栃木市境町11-2": {
+    "lat": 36.3733938,
+    "lng": 139.7298497,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１１−２",
+    "partialMatch": false
+  },
+  "栃木市境町1番23号": {
+    "lat": 36.3725,
+    "lng": 139.7308899,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町１−２３",
+    "partialMatch": false
+  },
+  "栃木市境町20-3": {
+    "lat": 36.3731486,
+    "lng": 139.7285494,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町２０−３",
+    "partialMatch": false
+  },
+  "栃木市境町20-4": {
+    "lat": 36.3730709,
+    "lng": 139.7283654,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町２０−４",
+    "partialMatch": false
+  },
+  "栃木市境町5-22": {
+    "lat": 36.3754124,
+    "lng": 139.7324079,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町５−２２",
+    "partialMatch": false
+  },
+  "栃木市境町8-18": {
+    "lat": 36.3751583,
+    "lng": 139.7312541,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町８−１８",
+    "partialMatch": false
+  },
+  "栃木市境町8-23": {
+    "lat": 36.3745504,
+    "lng": 139.7311449,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0043 栃木県栃木市境町８−２３",
+    "partialMatch": false
+  },
+  "栃木市大光寺町524-1": {
+    "lat": 36.3911334,
+    "lng": 139.7896603,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0003 栃木県栃木市大光寺町５２４−１",
+    "partialMatch": false
+  },
+  "栃木市大塚町1201-19": {
+    "lat": 36.4107926,
+    "lng": 139.7702738,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町１２０１−１９",
+    "partialMatch": false
+  },
+  "栃木市大塚町2501-1": {
+    "lat": 36.41520939999999,
+    "lng": 139.758799,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町２５０１−１",
+    "partialMatch": false
+  },
+  "栃木市大塚町303-6": {
+    "lat": 36.4011256,
+    "lng": 139.7733277,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町３０３−６",
+    "partialMatch": false
+  },
+  "栃木市大塚町786": {
+    "lat": 36.407076,
+    "lng": 139.7725265,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町７８６",
+    "partialMatch": false
+  },
+  "栃木市大塚町字岩家521-1": {
+    "lat": 36.4135526,
+    "lng": 139.7677638,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町",
+    "partialMatch": true
+  },
+  "栃木市大宮町1419-5": {
+    "lat": 36.3921401,
+    "lng": 139.7668129,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町１４１９−５",
+    "partialMatch": false
+  },
+  "栃木市大宮町1967": {
+    "lat": 36.3964594,
+    "lng": 139.7564995,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町１９６７",
+    "partialMatch": false
+  },
+  "栃木市大宮町2085-1": {
+    "lat": 36.3966783,
+    "lng": 139.7539078,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２０８５−１",
+    "partialMatch": false
+  },
+  "栃木市大宮町2100-4": {
+    "lat": 36.3972843,
+    "lng": 139.7541264,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２１００",
+    "partialMatch": false
+  },
+  "栃木市大宮町2189-1": {
+    "lat": 36.3991382,
+    "lng": 139.7598172,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２１８９−１",
+    "partialMatch": false
+  },
+  "栃木市大宮町2190-1": {
+    "lat": 36.39888,
+    "lng": 139.7591783,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２１９０−１",
+    "partialMatch": false
+  },
+  "栃木市大宮町2266-1": {
+    "lat": 36.4016792,
+    "lng": 139.754886,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２２６６−１",
+    "partialMatch": false
+  },
+  "栃木市大宮町2449-1": {
+    "lat": 36.4044451,
+    "lng": 139.7487029,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２４４９−１",
+    "partialMatch": false
+  },
+  "栃木市大宮町2815": {
+    "lat": 36.4055845,
+    "lng": 139.749182,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町２８１５",
+    "partialMatch": false
+  },
+  "栃木市大宮町400-1": {
+    "lat": 36.3885475,
+    "lng": 139.7560566,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町４００−１",
+    "partialMatch": false
+  },
+  "栃木市大宮町534": {
+    "lat": 36.3865914,
+    "lng": 139.7664954,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0011 栃木県栃木市大宮町５３４",
+    "partialMatch": false
+  },
+  "栃木市大平町455-4金太郎ビル1F": {
+    "lat": 36.3370319,
+    "lng": 139.7014518,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田金太郎ビル",
+    "partialMatch": true
+  },
+  "栃木市大平町下皆川154-3": {
+    "lat": 36.3501243,
+    "lng": 139.7020865,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川１５４−３",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2015-1": {
+    "lat": 36.3502794,
+    "lng": 139.7093328,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２０１５−１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2022-1": {
+    "lat": 36.3519649,
+    "lng": 139.7107121,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２０２２−１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2100-1": {
+    "lat": 36.3478887,
+    "lng": 139.703517,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１００−１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2100番地1": {
+    "lat": 36.3478887,
+    "lng": 139.703517,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１００−１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2101-1": {
+    "lat": 36.3481536,
+    "lng": 139.7071189,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１０１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2104-2": {
+    "lat": 36.3495734,
+    "lng": 139.7068971,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１０４−２",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2104-6": {
+    "lat": 36.3489292,
+    "lng": 139.7061796,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１０４−６",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2105-12": {
+    "lat": 36.3512747,
+    "lng": 139.7089443,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１０５−１２",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2105-28": {
+    "lat": 36.3503008,
+    "lng": 139.7077582,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１０５−２８",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2116-1": {
+    "lat": 36.3542386,
+    "lng": 139.709631,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１１６−１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川2116-10": {
+    "lat": 36.3542386,
+    "lng": 139.709631,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川２１１６",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川700": {
+    "lat": 36.3542495,
+    "lng": 139.7101251,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川７００",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川819-1": {
+    "lat": 36.3544107,
+    "lng": 139.7121828,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川８１９−１",
+    "partialMatch": false
+  },
+  "栃木市大平町下皆川850-2": {
+    "lat": 36.3531657,
+    "lng": 139.7111824,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4406 栃木県栃木市大平町下皆川８５０−２",
+    "partialMatch": false
+  },
+  "栃木市大平町下高島799": {
+    "lat": 36.3384212,
+    "lng": 139.7396185,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4414 栃木県栃木市大平町下高島７９９",
+    "partialMatch": false
+  },
+  "栃木市大平町下高島814-1": {
+    "lat": 36.337159,
+    "lng": 139.7398572,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4414 栃木県栃木市大平町下高島８１４−１",
+    "partialMatch": false
+  },
+  "栃木市大平町富田1390": {
+    "lat": 36.3467572,
+    "lng": 139.7040963,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田１３９０",
+    "partialMatch": false
+  },
+  "栃木市大平町富田1708-2": {
+    "lat": 36.3460229,
+    "lng": 139.7013392,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田１７０８−２",
+    "partialMatch": false
+  },
+  "栃木市大平町富田1944": {
+    "lat": 36.3444172,
+    "lng": 139.695106,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田１９４４",
+    "partialMatch": false
+  },
+  "栃木市大平町富田2293-1": {
+    "lat": 36.3357592,
+    "lng": 139.6946992,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田２２９３−１",
+    "partialMatch": false
+  },
+  "栃木市大平町富田2740-2": {
+    "lat": 36.3357203,
+    "lng": 139.6855153,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田２７４０−２",
+    "partialMatch": false
+  },
+  "栃木市大平町富田371-2": {
+    "lat": 36.3381544,
+    "lng": 139.6973885,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田３７１−２ ３７１番地２",
+    "partialMatch": false
+  },
+  "栃木市大平町富田392-7": {
+    "lat": 36.3344736,
+    "lng": 139.6992828,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田３９２−７",
+    "partialMatch": false
+  },
+  "栃木市大平町富田399-5": {
+    "lat": 36.3336635,
+    "lng": 139.698636,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田３９９−５",
+    "partialMatch": false
+  },
+  "栃木市大平町富田455-27": {
+    "lat": 36.3369343,
+    "lng": 139.7017739,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田４５５−２７",
+    "partialMatch": false
+  },
+  "栃木市大平町富田455番地7": {
+    "lat": 36.3370153,
+    "lng": 139.7016876,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田４５５−７",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5-21": {
+    "lat": 36.3364085,
+    "lng": 139.7016418,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５−２１",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5-4": {
+    "lat": 36.3366492,
+    "lng": 139.7016936,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５−４",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5-7": {
+    "lat": 36.3368367,
+    "lng": 139.7022775,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５−７",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5001-21": {
+    "lat": 36.343591,
+    "lng": 139.6987757,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５００１−２１",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5009-10": {
+    "lat": 36.3433631,
+    "lng": 139.6972915,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５００９−１０",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5207-4": {
+    "lat": 36.337599,
+    "lng": 139.7009518,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５２０７",
+    "partialMatch": false
+  },
+  "栃木市大平町富田5207－6": {
+    "lat": 36.337599,
+    "lng": 139.7009518,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５２０７",
+    "partialMatch": false
+  },
+  "栃木市大平町富田558-11": {
+    "lat": 36.3377521,
+    "lng": 139.7015254,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５５８",
+    "partialMatch": false
+  },
+  "栃木市大平町富田558-11プラッツおおひら内": {
+    "lat": 36.3380353,
+    "lng": 139.701892,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５５８−１１",
+    "partialMatch": true
+  },
+  "栃木市大平町富田558-11プラッツ大平内": {
+    "lat": 36.3380353,
+    "lng": 139.701892,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田５５８−１１",
+    "partialMatch": true
+  },
+  "栃木市大平町富田6-13": {
+    "lat": 36.3331126,
+    "lng": 139.7047265,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田６−１３",
+    "partialMatch": false
+  },
+  "栃木市大平町富田6-6": {
+    "lat": 36.3330861,
+    "lng": 139.7043401,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田６−６",
+    "partialMatch": false
+  },
+  "栃木市大平町富田980-1": {
+    "lat": 36.342183,
+    "lng": 139.7014483,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4404 栃木県栃木市大平町富田９８０−１",
+    "partialMatch": false
+  },
+  "栃木市大平町川連390-1": {
+    "lat": 36.3587604,
+    "lng": 139.7159104,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4407 栃木県栃木市大平町川連３９０−１",
+    "partialMatch": false
+  },
+  "栃木市大平町川連420-1": {
+    "lat": 36.3659325,
+    "lng": 139.7270437,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4407 栃木県栃木市大平町川連４２０−１",
+    "partialMatch": false
+  },
+  "栃木市大平町川連432": {
+    "lat": 36.3658857,
+    "lng": 139.7237144,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4407 栃木県栃木市大平町川連４３２",
+    "partialMatch": false
+  },
+  "栃木市大平町川連639-3": {
+    "lat": 36.3638987,
+    "lng": 139.7224849,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4407 栃木県栃木市大平町川連６３９−３",
+    "partialMatch": false
+  },
+  "栃木市大平町川連92-1": {
+    "lat": 36.3561425,
+    "lng": 139.7136162,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4407 栃木県栃木市大平町川連９２−１",
+    "partialMatch": false
+  },
+  "栃木市大平町新1020": {
+    "lat": 36.328588,
+    "lng": 139.7128922,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4425 栃木県栃木市大平町新１０２０",
+    "partialMatch": false
+  },
+  "栃木市大平町新1521-4": {
+    "lat": 36.3320512,
+    "lng": 139.7112223,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4425 栃木県栃木市大平町新１５２１−４",
+    "partialMatch": false
+  },
+  "栃木市大平町新880-1": {
+    "lat": 36.3237163,
+    "lng": 139.7122996,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4425 栃木県栃木市大平町新８８０−１",
+    "partialMatch": false
+  },
+  "栃木市大平町榎本628-6": {
+    "lat": 36.3218523,
+    "lng": 139.7289394,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4422 栃木県栃木市大平町榎本６２８−６",
+    "partialMatch": false
+  },
+  "栃木市大平町榎本900": {
+    "lat": 36.3207385,
+    "lng": 139.7237542,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4422 栃木県栃木市大平町榎本９００",
+    "partialMatch": false
+  },
+  "栃木市大平町榎本929-2": {
+    "lat": 36.3185504,
+    "lng": 139.7244697,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4422 栃木県栃木市大平町榎本９２９−２",
+    "partialMatch": false
+  },
+  "栃木市大平町蔵井1072-2": {
+    "lat": 36.3454757,
+    "lng": 139.7206034,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4403 栃木県栃木市大平町蔵井１０７２−２",
+    "partialMatch": false
+  },
+  "栃木市大平町西山田1738": {
+    "lat": 36.348488,
+    "lng": 139.6734434,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4405 栃木県栃木市大平町西山田１７３８",
+    "partialMatch": false
+  },
+  "栃木市大平町西山田308-1": {
+    "lat": 36.3552474,
+    "lng": 139.690985,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4405 栃木県栃木市大平町西山田３０８−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西山田857": {
+    "lat": 36.353359,
+    "lng": 139.6819713,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4405 栃木県栃木市大平町西山田８５７",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1552": {
+    "lat": 36.3081104,
+    "lng": 139.7141034,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１５５２",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1754-1": {
+    "lat": 36.3171772,
+    "lng": 139.7123195,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１７５４−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1791-1": {
+    "lat": 36.3175472,
+    "lng": 139.7183495,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１７９１−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1805-1": {
+    "lat": 36.318054,
+    "lng": 139.7180476,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１８０５−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1812": {
+    "lat": 36.3177798,
+    "lng": 139.717247,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１８１２",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1837-1": {
+    "lat": 36.3184124,
+    "lng": 139.7129978,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１８３７−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1837番地1 とりせん内": {
+    "lat": 36.3186844,
+    "lng": 139.7130792,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１８３７−１",
+    "partialMatch": true
+  },
+  "栃木市大平町西水代1846-2": {
+    "lat": 36.3196298,
+    "lng": 139.711741,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１８４６−２",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1991-2": {
+    "lat": 36.3138001,
+    "lng": 139.7119725,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１９９１−２",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代1992-1": {
+    "lat": 36.313973,
+    "lng": 139.712433,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代１９９２−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代2023-1": {
+    "lat": 36.3114522,
+    "lng": 139.7126982,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代２０２３−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代2799-1": {
+    "lat": 36.3162155,
+    "lng": 139.7067493,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代２７９９−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代2808-1": {
+    "lat": 36.3166705,
+    "lng": 139.7071529,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代２８０８−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西水代3013-1": {
+    "lat": 36.3156164,
+    "lng": 139.7041497,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4423 栃木県栃木市大平町西水代３０１３−１",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田1-22": {
+    "lat": 36.3358029,
+    "lng": 139.7136898,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田１−２２",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田101-15": {
+    "lat": 36.3346127,
+    "lng": 139.7118462,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田１０１",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田147-4": {
+    "lat": 36.329242,
+    "lng": 139.7133369,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田１４７−４",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田152": {
+    "lat": 36.328724,
+    "lng": 139.7140351,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田１５２",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田20-2": {
+    "lat": 36.3353525,
+    "lng": 139.7143982,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田２０−２",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田230-5": {
+    "lat": 36.3237952,
+    "lng": 139.7129778,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田２３０−５",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田256": {
+    "lat": 36.3221329,
+    "lng": 139.7120655,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田２５６",
+    "partialMatch": false
+  },
+  "栃木市大平町西野田655-2": {
+    "lat": 36.33588710000001,
+    "lng": 139.715691,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4421 栃木県栃木市大平町西野田６５５−２",
+    "partialMatch": false
+  },
+  "栃木市大森町451-7": {
+    "lat": 36.4143882,
+    "lng": 139.6978782,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0133 栃木県栃木市大森町４５１−７",
+    "partialMatch": false
+  },
+  "栃木市大森町456-2": {
+    "lat": 36.4139173,
+    "lng": 139.6990872,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0133 栃木県栃木市大森町４５６−２",
+    "partialMatch": false
+  },
+  "栃木市大町1-19ドルム大町1F": {
+    "lat": 36.3907618,
+    "lng": 139.7348467,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町１−１９",
+    "partialMatch": true
+  },
+  "栃木市大町17-22": {
+    "lat": 36.3941143,
+    "lng": 139.7366654,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町１７−２２",
+    "partialMatch": false
+  },
+  "栃木市大町18-9": {
+    "lat": 36.3937493,
+    "lng": 139.7357079,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町１８−９",
+    "partialMatch": false
+  },
+  "栃木市大町19-8": {
+    "lat": 36.3943603,
+    "lng": 139.7349859,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町１９−８",
+    "partialMatch": false
+  },
+  "栃木市大町2-10": {
+    "lat": 36.3922225,
+    "lng": 139.735033,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町２−１０",
+    "partialMatch": false
+  },
+  "栃木市大町22-51": {
+    "lat": 36.3977362,
+    "lng": 139.7339622,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町２２−５１",
+    "partialMatch": false
+  },
+  "栃木市大町22-55": {
+    "lat": 36.3974304,
+    "lng": 139.7333381,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町２２−５５",
+    "partialMatch": false
+  },
+  "栃木市大町23-21": {
+    "lat": 36.3971239,
+    "lng": 139.7340392,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町２３−２１",
+    "partialMatch": false
+  },
+  "栃木市大町31-30": {
+    "lat": 36.3968503,
+    "lng": 139.7369492,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町３１−３０",
+    "partialMatch": false
+  },
+  "栃木市大町39-5": {
+    "lat": 36.3993583,
+    "lng": 139.7350971,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町３９−５",
+    "partialMatch": false
+  },
+  "栃木市大町5-3-1": {
+    "lat": 36.3909116,
+    "lng": 139.7329931,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0071 栃木県栃木市大町５−３−１",
+    "partialMatch": false
+  },
+  "栃木市大皆川町275-1": {
+    "lat": 36.39367,
+    "lng": 139.697579,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0068 栃木県栃木市大皆川町２７５−１",
+    "partialMatch": false
+  },
+  "栃木市室町1-10": {
+    "lat": 36.3763537,
+    "lng": 139.7314608,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町１−１０",
+    "partialMatch": false
+  },
+  "栃木市室町1-11": {
+    "lat": 36.3764526,
+    "lng": 139.7314176,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町１−１１",
+    "partialMatch": false
+  },
+  "栃木市室町1-22": {
+    "lat": 36.37615419999999,
+    "lng": 139.7327689,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町１−２２ 竹武ビル",
+    "partialMatch": false
+  },
+  "栃木市室町11-11": {
+    "lat": 36.3770721,
+    "lng": 139.7343419,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町１１−１１",
+    "partialMatch": false
+  },
+  "栃木市室町11-7": {
+    "lat": 36.3770876,
+    "lng": 139.7338326,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町１１−７",
+    "partialMatch": false
+  },
+  "栃木市室町12-11": {
+    "lat": 36.37758820000001,
+    "lng": 139.7344834,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町１２−１１",
+    "partialMatch": false
+  },
+  "栃木市室町2-36": {
+    "lat": 36.3762472,
+    "lng": 139.7312463,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町２−３６",
+    "partialMatch": false
+  },
+  "栃木市室町5-11": {
+    "lat": 36.3771112,
+    "lng": 139.7315773,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町５−１１",
+    "partialMatch": false
+  },
+  "栃木市室町5-24": {
+    "lat": 36.37727539999999,
+    "lng": 139.732919,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町５−２４",
+    "partialMatch": false
+  },
+  "栃木市室町6-12": {
+    "lat": 36.3768051,
+    "lng": 139.7315314,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町６−１２",
+    "partialMatch": false
+  },
+  "栃木市室町6-27": {
+    "lat": 36.3766643,
+    "lng": 139.7324714,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町６",
+    "partialMatch": false
+  },
+  "栃木市室町6-4": {
+    "lat": 36.3767309,
+    "lng": 139.7325514,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町６−４",
+    "partialMatch": false
+  },
+  "栃木市室町8-10": {
+    "lat": 36.3762874,
+    "lng": 139.733651,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0036 栃木県栃木市室町８−１０",
+    "partialMatch": false
+  },
+  "栃木市家中2089-1": {
+    "lat": 36.418481,
+    "lng": 139.7495335,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２０８９−１",
+    "partialMatch": false
+  },
+  "栃木市富士見町3-12": {
+    "lat": 36.376398,
+    "lng": 139.7263817,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0044 栃木県栃木市富士見町３−１２",
+    "partialMatch": false
+  },
+  "栃木市富士見町3-5オリーブビル1F": {
+    "lat": 36.3760865,
+    "lng": 139.7269161,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0044 栃木県栃木市富士見町３−５ オリーブビル 1f",
+    "partialMatch": false
+  },
+  "栃木市富士見町4-4": {
+    "lat": 36.3771899,
+    "lng": 139.7251674,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0044 栃木県栃木市富士見町４−４",
+    "partialMatch": false
+  },
+  "栃木市富士見町5-30": {
+    "lat": 36.3777666,
+    "lng": 139.7264809,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0044 栃木県栃木市富士見町５−３０",
+    "partialMatch": false
+  },
+  "栃木市富士見町5-31": {
+    "lat": 36.3780896,
+    "lng": 139.7268629,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0044 栃木県栃木市富士見町５−３１ 5番31号",
+    "partialMatch": false
+  },
+  "栃木市小野口町792": {
+    "lat": 36.3809758,
+    "lng": 139.6643279,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0065 栃木県栃木市小野口町７９２",
+    "partialMatch": false
+  },
+  "栃木市尻内町155": {
+    "lat": 36.4311498,
+    "lng": 139.6775476,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0203 栃木県栃木市尻内町１５５",
+    "partialMatch": false
+  },
+  "栃木市尻内町1856": {
+    "lat": 36.4375542,
+    "lng": 139.6814863,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0203 栃木県栃木市尻内町１８５６",
+    "partialMatch": false
+  },
+  "栃木市尻内町202": {
+    "lat": 36.4328389,
+    "lng": 139.6787983,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0203 栃木県栃木市尻内町２０２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町下津原1150-1": {
+    "lat": 36.3221442,
+    "lng": 139.6405349,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4308 栃木県栃木市岩舟町下津原１１５０−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町下津原1585": {
+    "lat": 36.309311,
+    "lng": 139.6340928,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4308 栃木県栃木市岩舟町下津原１５８５",
+    "partialMatch": false
+  },
+  "栃木市岩舟町下津原1612": {
+    "lat": 36.310437,
+    "lng": 139.6333047,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4308 栃木県栃木市岩舟町下津原１６１２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町下津原165-2": {
+    "lat": 36.3183018,
+    "lng": 139.6521825,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4308 栃木県栃木市岩舟町下津原１６５−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町下津原187": {
+    "lat": 36.3183648,
+    "lng": 139.649966,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4308 栃木県栃木市岩舟町下津原１８７",
+    "partialMatch": false
+  },
+  "栃木市岩舟町下津原460-1": {
+    "lat": 36.3188187,
+    "lng": 139.6442145,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4308 栃木県栃木市岩舟町下津原４６０",
+    "partialMatch": false
+  },
+  "栃木市岩舟町和泉1460-2": {
+    "lat": 36.3196168,
+    "lng": 139.6726759,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4303 栃木県栃木市岩舟町和泉１４６０−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町和泉1543": {
+    "lat": 36.3193192,
+    "lng": 139.6701109,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4303 栃木県栃木市岩舟町和泉１５４３",
+    "partialMatch": false
+  },
+  "栃木市岩舟町和泉1624": {
+    "lat": 36.3181433,
+    "lng": 139.6801865,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4303 栃木県栃木市岩舟町和泉１６２４",
+    "partialMatch": false
+  },
+  "栃木市岩舟町和泉671": {
+    "lat": 36.3246326,
+    "lng": 139.677577,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4303 栃木県栃木市岩舟町和泉６７１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町和泉969-2": {
+    "lat": 36.3200014,
+    "lng": 139.6662128,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4303 栃木県栃木市岩舟町和泉９６９−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町大字下津原167": {
+    "lat": 36.3143334,
+    "lng": 139.6595621,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静",
+    "partialMatch": true
+  },
+  "栃木市岩舟町小野寺2557": {
+    "lat": 36.3726421,
+    "lng": 139.6351578,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4314 栃木県栃木市岩舟町小野寺２５５７",
+    "partialMatch": false
+  },
+  "栃木市岩舟町新里535-3": {
+    "lat": 36.3290756,
+    "lng": 139.6374109,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4316 栃木県栃木市岩舟町新里５３５−３",
+    "partialMatch": false
+  },
+  "栃木市岩舟町曲ケ島2016-1": {
+    "lat": 36.3046145,
+    "lng": 139.6895487,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4306 栃木県栃木市岩舟町曲ケ島２０１６−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町畳岡543-7": {
+    "lat": 36.3231008,
+    "lng": 139.6406599,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4309 栃木県栃木市岩舟町畳岡５４３−７",
+    "partialMatch": false
+  },
+  "栃木市岩舟町畳岡702-1": {
+    "lat": 36.3187052,
+    "lng": 139.6462568,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4309 栃木県栃木市岩舟町畳岡７０２−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町畳岡713-1": {
+    "lat": 36.3188406,
+    "lng": 139.6490899,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4309 栃木県栃木市岩舟町畳岡７１３−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静 125１": {
+    "lat": 36.3177223,
+    "lng": 139.6638756,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１２５１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1056-1": {
+    "lat": 36.3191788,
+    "lng": 139.6597727,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１０５６−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1059-8": {
+    "lat": 36.3192373,
+    "lng": 139.6593675,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１０５９−８",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1065番地2": {
+    "lat": 36.3193555,
+    "lng": 139.6583454,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１０６５−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1083-2": {
+    "lat": 36.3195961,
+    "lng": 139.6583521,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１０８３−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1132": {
+    "lat": 36.320056,
+    "lng": 139.6646239,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１１３２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1159-1": {
+    "lat": 36.3192981,
+    "lng": 139.6632102,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１１５９−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1164-1": {
+    "lat": 36.3193552,
+    "lng": 139.6620872,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１１６４−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1180": {
+    "lat": 36.317694,
+    "lng": 139.6601105,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県下都賀郡栃木市岩舟町静１１８０",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1417-1": {
+    "lat": 36.313683,
+    "lng": 139.6564952,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１４１７−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1481": {
+    "lat": 36.3124685,
+    "lng": 139.6540009,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１４８１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1634-1": {
+    "lat": 36.3117738,
+    "lng": 139.6501659,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１６３４−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1783-1": {
+    "lat": 36.3119741,
+    "lng": 139.6560003,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１７８３−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静1793--1": {
+    "lat": 36.3134159,
+    "lng": 139.6573605,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静１７９３−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静2173-1": {
+    "lat": 36.3137073,
+    "lng": 139.6584594,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静２１７３−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静2229-7": {
+    "lat": 36.3148756,
+    "lng": 139.6626073,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静２２２９−７",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静2229-8": {
+    "lat": 36.3141514,
+    "lng": 139.6624841,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静２２２９−８",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静2368": {
+    "lat": 36.3147977,
+    "lng": 139.6652035,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静２３６８",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静303-9": {
+    "lat": 36.3257812,
+    "lng": 139.6607507,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３０３−９",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静3057-2": {
+    "lat": 36.3139407,
+    "lng": 139.6687813,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３０５７−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静3500-4": {
+    "lat": 36.3067068,
+    "lng": 139.6712039,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３５００",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静3601-2": {
+    "lat": 36.3040837,
+    "lng": 139.6663459,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３６０１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静3624": {
+    "lat": 36.3043738,
+    "lng": 139.6646731,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３６２４",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静37": {
+    "lat": 36.3275388,
+    "lng": 139.6558184,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３７",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静3931": {
+    "lat": 36.3057694,
+    "lng": 139.6557743,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静３９３１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静556-2": {
+    "lat": 36.3218369,
+    "lng": 139.6601993,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静５５６−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静822-1": {
+    "lat": 36.32039779999999,
+    "lng": 139.6556205,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静８２２−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静840": {
+    "lat": 36.3196916,
+    "lng": 139.6560729,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静８４０",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静844-2": {
+    "lat": 36.3196117,
+    "lng": 139.6555166,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静８４４−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静874-1": {
+    "lat": 36.3183557,
+    "lng": 139.652903,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静８７４−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静879番地3": {
+    "lat": 36.31864059999999,
+    "lng": 139.6542726,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静８７９−３",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静882-3": {
+    "lat": 36.319286,
+    "lng": 139.6545925,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静８８２−３",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静930-1": {
+    "lat": 36.316465,
+    "lng": 139.6548578,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4307 栃木県栃木市岩舟町静９３０−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静和2115-1": {
+    "lat": 36.3183137,
+    "lng": 139.6842983,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4304 栃木県栃木市岩舟町静和２１１５−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静和2128-1": {
+    "lat": 36.3184856,
+    "lng": 139.6814081,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4304 栃木県栃木市岩舟町静和２１２８−１",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静和2157": {
+    "lat": 36.3170802,
+    "lng": 139.6821309,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4304 栃木県栃木市岩舟町静和２１５７",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静和316-2": {
+    "lat": 36.32876359999999,
+    "lng": 139.6864833,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4304 栃木県栃木市岩舟町静和３１６−２",
+    "partialMatch": false
+  },
+  "栃木市岩舟町静戸1479": {
+    "lat": 36.3080694,
+    "lng": 139.6990645,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4305 栃木県栃木市岩舟町静戸１４７９",
+    "partialMatch": false
+  },
+  "栃木市岩舟町鷲巣360-4": {
+    "lat": 36.3333707,
+    "lng": 139.6641645,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4301 栃木県栃木市岩舟町鷲巣３６０−４",
+    "partialMatch": false
+  },
+  "栃木市岩舟町鷲巣59-5": {
+    "lat": 36.3265425,
+    "lng": 139.6611671,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-4301 栃木県下都賀郡栃木市岩舟町鷲巣５９−５",
+    "partialMatch": false
+  },
+  "栃木市川原田町1578": {
+    "lat": 36.4107267,
+    "lng": 139.735195,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町１５７８",
+    "partialMatch": false
+  },
+  "栃木市川原田町201": {
+    "lat": 36.4002801,
+    "lng": 139.7345682,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町２０１",
+    "partialMatch": false
+  },
+  "栃木市川原田町268": {
+    "lat": 36.4045113,
+    "lng": 139.7350931,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町２６８",
+    "partialMatch": false
+  },
+  "栃木市川原田町280-1": {
+    "lat": 36.405551,
+    "lng": 139.7347863,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町２８０−１",
+    "partialMatch": false
+  },
+  "栃木市川原田町280-6": {
+    "lat": 36.4060051,
+    "lng": 139.7352012,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町２８０−６",
+    "partialMatch": false
+  },
+  "栃木市川原田町281-1": {
+    "lat": 36.4062084,
+    "lng": 139.7347646,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町２８１−１",
+    "partialMatch": false
+  },
+  "栃木市川原田町405-6tove103": {
+    "lat": 36.40488029999999,
+    "lng": 139.7294382,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町",
+    "partialMatch": true
+  },
+  "栃木市川原田町92-12": {
+    "lat": 36.4011056,
+    "lng": 139.7384893,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町９２−１２",
+    "partialMatch": false
+  },
+  "栃木市川原田町933-1": {
+    "lat": 36.4081127,
+    "lng": 139.7255111,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0123 栃木県栃木市川原田町９３３−１",
+    "partialMatch": false
+  },
+  "栃木市川連650": {
+    "lat": 36.2813405,
+    "lng": 139.9988774,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒308-0814 茨城県筑西市川連",
+    "partialMatch": true
+  },
+  "栃木市平井町1010-8": {
+    "lat": 36.3740523,
+    "lng": 139.7096264,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町１０１０−８",
+    "partialMatch": false
+  },
+  "栃木市平井町109-3": {
+    "lat": 36.3713011,
+    "lng": 139.710165,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町１０９−３",
+    "partialMatch": false
+  },
+  "栃木市平井町659": {
+    "lat": 36.3630943,
+    "lng": 139.6943662,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町６５９",
+    "partialMatch": false
+  },
+  "栃木市平井町659-8": {
+    "lat": 36.3604294,
+    "lng": 139.6954239,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町６５９−８",
+    "partialMatch": false
+  },
+  "栃木市平井町660": {
+    "lat": 36.3602815,
+    "lng": 139.6958065,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町６６０",
+    "partialMatch": false
+  },
+  "栃木市平井町681": {
+    "lat": 36.3629127,
+    "lng": 139.6980976,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町６８１",
+    "partialMatch": false
+  },
+  "栃木市平井町公園11": {
+    "lat": 36.3672363,
+    "lng": 139.7039016,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町",
+    "partialMatch": true
+  },
+  "栃木市平井町公園地内6号": {
+    "lat": 36.3672363,
+    "lng": 139.7039016,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0054 栃木県栃木市平井町",
+    "partialMatch": true
+  },
+  "栃木市平柳町1-1-27": {
+    "lat": 36.3865066,
+    "lng": 139.7405047,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目１−２７",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-14-16": {
+    "lat": 36.3893909,
+    "lng": 139.7375954,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目１４−１６",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-15-10": {
+    "lat": 36.3900553,
+    "lng": 139.7377719,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目１５−１０",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-15-8": {
+    "lat": 36.3908624,
+    "lng": 139.7374417,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目１５−８",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-2-26": {
+    "lat": 36.3865989,
+    "lng": 139.7400419,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目２−２６",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-2-7-1KURAショップⅢーC": {
+    "lat": 36.3874824,
+    "lng": 139.7389283,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目２−７ １ KURAショップ III",
+    "partialMatch": true
+  },
+  "栃木市平柳町1-27-3": {
+    "lat": 36.3924678,
+    "lng": 139.7369655,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目２７−３",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-33-11": {
+    "lat": 36.3942518,
+    "lng": 139.738353,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目３３−１１ タグマダイヤモンド",
+    "partialMatch": false
+  },
+  "栃木市平柳町1-35-11": {
+    "lat": 36.39595389999999,
+    "lng": 139.7376172,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目３５−１１",
+    "partialMatch": false
+  },
+  "栃木市平柳町1丁目41番7号": {
+    "lat": 36.3967126,
+    "lng": 139.7381542,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目４１−７",
+    "partialMatch": false
+  },
+  "栃木市平柳町1－4－14": {
+    "lat": 36.3883477,
+    "lng": 139.7383321,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町１丁目４−１４",
+    "partialMatch": false
+  },
+  "栃木市平柳町2-11-26": {
+    "lat": 36.3921824,
+    "lng": 139.745125,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目１１−２６",
+    "partialMatch": false
+  },
+  "栃木市平柳町2-12-37": {
+    "lat": 36.3937398,
+    "lng": 139.7441216,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目１２−３７ クレセント",
+    "partialMatch": false
+  },
+  "栃木市平柳町2-23-9": {
+    "lat": 36.393807,
+    "lng": 139.7480758,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目２３−９",
+    "partialMatch": false
+  },
+  "栃木市平柳町2-26-26": {
+    "lat": 36.3948116,
+    "lng": 139.7524401,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目２６−２６",
+    "partialMatch": false
+  },
+  "栃木市平柳町2-9-22": {
+    "lat": 36.39024149999999,
+    "lng": 139.7458636,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目９−２２",
+    "partialMatch": false
+  },
+  "栃木市平柳町2丁目26-20": {
+    "lat": 36.393696,
+    "lng": 139.752283,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目２６−２０",
+    "partialMatch": false
+  },
+  "栃木市平柳町2丁目26番21号": {
+    "lat": 36.3942397,
+    "lng": 139.7517253,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町２丁目２６−２１ ２６番２１号",
+    "partialMatch": false
+  },
+  "栃木市平柳町3-22-25": {
+    "lat": 36.3943945,
+    "lng": 139.7487295,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町３丁目２２−２５",
+    "partialMatch": false
+  },
+  "栃木市平柳町3-43-7": {
+    "lat": 36.39547659999999,
+    "lng": 139.7449156,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町３丁目４３−７",
+    "partialMatch": false
+  },
+  "栃木市平柳町3-55-24": {
+    "lat": 36.3944276,
+    "lng": 139.7454129,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町３丁目５５−２４",
+    "partialMatch": false
+  },
+  "栃木市平柳町3丁目12-21": {
+    "lat": 36.3946459,
+    "lng": 139.7462425,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0012 栃木県栃木市平柳町３丁目１２−２１",
+    "partialMatch": false
+  },
+  "栃木市惣社町1686-1": {
+    "lat": 36.4032233,
+    "lng": 139.7897439,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町１６８６−１",
+    "partialMatch": false
+  },
+  "栃木市惣社町1785-1": {
+    "lat": 36.40318329999999,
+    "lng": 139.7895002,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町１７８５−１",
+    "partialMatch": false
+  },
+  "栃木市惣社町306-3": {
+    "lat": 36.40087,
+    "lng": 139.7749726,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町３０６−３",
+    "partialMatch": false
+  },
+  "栃木市惣社町347-1": {
+    "lat": 36.4036781,
+    "lng": 139.7747895,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町３４７−１",
+    "partialMatch": false
+  },
+  "栃木市惣社町790-1": {
+    "lat": 36.4085673,
+    "lng": 139.7810837,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町７９０−１",
+    "partialMatch": false
+  },
+  "栃木市惣社町861": {
+    "lat": 36.4066139,
+    "lng": 139.7788026,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町８６１",
+    "partialMatch": false
+  },
+  "栃木市惣社町925-14": {
+    "lat": 36.4071902,
+    "lng": 139.7769467,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0002 栃木県栃木市惣社町９２５−１４",
+    "partialMatch": false
+  },
+  "栃木市新井町1002-1": {
+    "lat": 36.4020692,
+    "lng": 139.7129587,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0061 栃木県栃木市新井町１００２−１",
+    "partialMatch": false
+  },
+  "栃木市新井町1004-2": {
+    "lat": 36.40211040000001,
+    "lng": 139.7112223,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0061 栃木県栃木市新井町１００４−２",
+    "partialMatch": false
+  },
+  "栃木市新井町1004-2 ２F": {
+    "lat": 36.40211040000001,
+    "lng": 139.7112223,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0061 栃木県栃木市新井町１００４−２ 2f",
+    "partialMatch": false
+  },
+  "栃木市新井町251-2": {
+    "lat": 36.396149,
+    "lng": 139.710457,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0061 栃木県栃木市新井町２５１−２",
+    "partialMatch": false
+  },
+  "栃木市日の出町14-42": {
+    "lat": 36.3862073,
+    "lng": 139.7403671,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0031 栃木県栃木市日ノ出町６ 日の出町",
+    "partialMatch": true
+  },
+  "栃木市日の出町5-14": {
+    "lat": 36.3862073,
+    "lng": 139.7403671,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0031 栃木県栃木市日ノ出町６ 日の出町",
+    "partialMatch": true
+  },
+  "栃木市日の出町6-15": {
+    "lat": 36.3862073,
+    "lng": 139.7403671,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0031 栃木県栃木市日ノ出町６ 日の出町",
+    "partialMatch": true
+  },
+  "栃木市日ノ出町1-18": {
+    "lat": 36.3839451,
+    "lng": 139.7390193,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0031 栃木県栃木市日ノ出町１−１８",
+    "partialMatch": false
+  },
+  "栃木市日ノ出町1-50": {
+    "lat": 36.3821163,
+    "lng": 139.7394784,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0031 栃木県栃木市日ノ出町１−５０",
+    "partialMatch": false
+  },
+  "栃木市日ノ出町5-5": {
+    "lat": 36.3856416,
+    "lng": 139.7399825,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0031 栃木県栃木市日ノ出町５−５",
+    "partialMatch": false
+  },
+  "栃木市旭町10-4": {
+    "lat": 36.3762363,
+    "lng": 139.7377975,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町１０−４",
+    "partialMatch": false
+  },
+  "栃木市旭町13-18": {
+    "lat": 36.3776159,
+    "lng": 139.7357543,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町１３−１８",
+    "partialMatch": false
+  },
+  "栃木市旭町14-2": {
+    "lat": 36.3781191,
+    "lng": 139.7347536,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町１４−２",
+    "partialMatch": false
+  },
+  "栃木市旭町16-18": {
+    "lat": 36.3787334,
+    "lng": 139.73678,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町１６−１８",
+    "partialMatch": false
+  },
+  "栃木市旭町16-3": {
+    "lat": 36.3782559,
+    "lng": 139.7354896,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町１６−３",
+    "partialMatch": false
+  },
+  "栃木市旭町16-37": {
+    "lat": 36.3779152,
+    "lng": 139.7355891,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町１６−３７",
+    "partialMatch": false
+  },
+  "栃木市旭町22-23": {
+    "lat": 36.379081,
+    "lng": 139.7372786,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町２２−２３",
+    "partialMatch": false
+  },
+  "栃木市旭町24-9": {
+    "lat": 36.3799746,
+    "lng": 139.7351958,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町２４−９",
+    "partialMatch": false
+  },
+  "栃木市旭町26-22": {
+    "lat": 36.3800931,
+    "lng": 139.7371783,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町２６−２２",
+    "partialMatch": false
+  },
+  "栃木市旭町26-6": {
+    "lat": 36.3804989,
+    "lng": 139.7357002,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町２６−６",
+    "partialMatch": false
+  },
+  "栃木市旭町26-9": {
+    "lat": 36.3805935,
+    "lng": 139.7359502,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町２６−９",
+    "partialMatch": false
+  },
+  "栃木市旭町29-4": {
+    "lat": 36.380618,
+    "lng": 139.7373115,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0035 栃木県栃木市旭町２９−４",
+    "partialMatch": false
+  },
+  "栃木市星野町257-3": {
+    "lat": 36.4709454,
+    "lng": 139.6279668,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0201 栃木県栃木市星野町２５７−３",
+    "partialMatch": false
+  },
+  "栃木市昭和町1-22": {
+    "lat": 36.3889354,
+    "lng": 139.7356844,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町１−２２",
+    "partialMatch": false
+  },
+  "栃木市昭和町2-20": {
+    "lat": 36.3899799,
+    "lng": 139.7353018,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町２−２０",
+    "partialMatch": false
+  },
+  "栃木市昭和町2-28": {
+    "lat": 36.3891601,
+    "lng": 139.7357343,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町２−２８",
+    "partialMatch": false
+  },
+  "栃木市昭和町3-1": {
+    "lat": 36.3905777,
+    "lng": 139.7357443,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町３−１",
+    "partialMatch": false
+  },
+  "栃木市昭和町3-1ヤオハンアイム内": {
+    "lat": 36.390624,
+    "lng": 139.7356,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町３−１ ヤオハンプラザアイム店 １Ｆ",
+    "partialMatch": true
+  },
+  "栃木市昭和町3-1ヤオハンアイム店内": {
+    "lat": 36.390624,
+    "lng": 139.7356,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町３−１ ヤオハンプラザアイム店 １Ｆ",
+    "partialMatch": true
+  },
+  "栃木市昭和町5-4": {
+    "lat": 36.391547,
+    "lng": 139.736822,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町５−４",
+    "partialMatch": false
+  },
+  "栃木市昭和町6-13": {
+    "lat": 36.3908852,
+    "lng": 139.7371067,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町６−１３",
+    "partialMatch": false
+  },
+  "栃木市昭和町6-5": {
+    "lat": 36.39069370000001,
+    "lng": 139.7365885,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町６−５",
+    "partialMatch": false
+  },
+  "栃木市昭和町7-3": {
+    "lat": 36.3895207,
+    "lng": 139.7362629,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町７−３",
+    "partialMatch": false
+  },
+  "栃木市昭和町8-13": {
+    "lat": 36.3887944,
+    "lng": 139.7367028,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0013 栃木県栃木市昭和町８−１３",
+    "partialMatch": false
+  },
+  "栃木市木野地町180": {
+    "lat": 36.4165173,
+    "lng": 139.7320338,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0122 栃木県栃木市木野地町１８０",
+    "partialMatch": false
+  },
+  "栃木市本町1-25": {
+    "lat": 36.3745498,
+    "lng": 139.7403381,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0034 栃木県栃木市本町１−２５",
+    "partialMatch": false
+  },
+  "栃木市本町1-34-1": {
+    "lat": 36.3743522,
+    "lng": 139.7393888,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0034 栃木県栃木市本町１−３４−１",
+    "partialMatch": false
+  },
+  "栃木市本町18-48": {
+    "lat": 36.3807702,
+    "lng": 139.7420373,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0034 栃木県栃木市本町１８−４８",
+    "partialMatch": false
+  },
+  "栃木市本町2-2": {
+    "lat": 36.3754964,
+    "lng": 139.7386508,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0034 栃木県栃木市本町２−２",
+    "partialMatch": false
+  },
+  "栃木市柳橋町13-7": {
+    "lat": 36.38442149999999,
+    "lng": 139.7272329,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0051 栃木県栃木市柳橋町１３−７",
+    "partialMatch": false
+  },
+  "栃木市柳橋町18-3": {
+    "lat": 36.3831679,
+    "lng": 139.7244603,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0051 栃木県栃木市柳橋町１８−３",
+    "partialMatch": false
+  },
+  "栃木市柳橋町2-13": {
+    "lat": 36.3811271,
+    "lng": 139.7269975,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0051 栃木県栃木市柳橋町２−１３",
+    "partialMatch": false
+  },
+  "栃木市柳橋町3-22": {
+    "lat": 36.3803913,
+    "lng": 139.7262411,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0051 栃木県栃木市柳橋町３−２２",
+    "partialMatch": false
+  },
+  "栃木市柳橋町7-3": {
+    "lat": 36.3809342,
+    "lng": 139.722112,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0051 栃木県栃木市柳橋町７−３",
+    "partialMatch": false
+  },
+  "栃木市梓町213-1": {
+    "lat": 36.4304229,
+    "lng": 139.6868102,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0131 栃木県栃木市梓町２１３−１",
+    "partialMatch": false
+  },
+  "栃木市樋ノ口字中芝原75-4": {
+    "lat": 36.362236,
+    "lng": 139.7562635,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0024 栃木県栃木市樋ノ口町",
+    "partialMatch": true
+  },
+  "栃木市樋ノ口町122-2": {
+    "lat": 36.3577855,
+    "lng": 139.7581501,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0024 栃木県栃木市樋ノ口町１２２−２",
+    "partialMatch": false
+  },
+  "栃木市樋ノ口町27-2": {
+    "lat": 36.3553411,
+    "lng": 139.7599709,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0024 栃木県栃木市樋ノ口町２７−２",
+    "partialMatch": false
+  },
+  "栃木市樋ノ口町396-1": {
+    "lat": 36.3627033,
+    "lng": 139.7544119,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0024 栃木県栃木市樋ノ口町３９６−１",
+    "partialMatch": false
+  },
+  "栃木市樋ノ口町66-1": {
+    "lat": 36.3593772,
+    "lng": 139.7557045,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0024 栃木県栃木市樋ノ口町６６−１",
+    "partialMatch": false
+  },
+  "栃木市樋ノ口町73-3": {
+    "lat": 36.3608133,
+    "lng": 139.7558243,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0024 栃木県栃木市樋ノ口町７３−３",
+    "partialMatch": false
+  },
+  "栃木市河合町1-14": {
+    "lat": 36.3728817,
+    "lng": 139.7330877,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0041 栃木県栃木市河合町１−１４",
+    "partialMatch": false
+  },
+  "栃木市河合町1-5ホテルシャンブル1階": {
+    "lat": 36.3724225,
+    "lng": 139.7318328,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0041 栃木県栃木市河合町１−５",
+    "partialMatch": true
+  },
+  "栃木市河合町4-16": {
+    "lat": 36.3739686,
+    "lng": 139.7328369,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0041 栃木県栃木市河合町４−１６",
+    "partialMatch": false
+  },
+  "栃木市河合町4-16イートミーサンドイッチ内": {
+    "lat": 36.3739267,
+    "lng": 139.7327296,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0041 栃木県栃木市河合町４−１６",
+    "partialMatch": true
+  },
+  "栃木市河合町8-21": {
+    "lat": 36.3740022,
+    "lng": 139.7333712,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0041 栃木県栃木市河合町８−２１",
+    "partialMatch": false
+  },
+  "栃木市河合町8-24": {
+    "lat": 36.3737811,
+    "lng": 139.7332778,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0041 栃木県栃木市河合町８−２４",
+    "partialMatch": false
+  },
+  "栃木市沼和田町11-17": {
+    "lat": 36.3690124,
+    "lng": 139.7319969,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0042 栃木県栃木市沼和田町１１−１７",
+    "partialMatch": false
+  },
+  "栃木市沼和田町13-45": {
+    "lat": 36.3702865,
+    "lng": 139.7337577,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0042 栃木県栃木市沼和田町１３−４５",
+    "partialMatch": false
+  },
+  "栃木市沼和田町13-45 KOMATSUYA店内": {
+    "lat": 36.37030800000001,
+    "lng": 139.73371,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0042 栃木県栃木市沼和田町１３−４５",
+    "partialMatch": true
+  },
+  "栃木市沼和田町27-2": {
+    "lat": 36.3673542,
+    "lng": 139.7373006,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0042 栃木県栃木市沼和田町２７−２",
+    "partialMatch": false
+  },
+  "栃木市沼和田町4-30": {
+    "lat": 36.3709873,
+    "lng": 139.7336575,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0042 栃木県栃木市沼和田町４−３０",
+    "partialMatch": false
+  },
+  "栃木市沼和田町46-4": {
+    "lat": 36.3651029,
+    "lng": 139.7350635,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0042 栃木県栃木市沼和田町４６−４ ニューヴィレッジA",
+    "partialMatch": false
+  },
+  "栃木市泉川250-3": {
+    "lat": 36.3898673,
+    "lng": 139.7098615,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0062 栃木県栃木市泉川町２５０−３",
+    "partialMatch": false
+  },
+  "栃木市泉川町669-3": {
+    "lat": 36.38345770000001,
+    "lng": 139.7144142,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0062 栃木県栃木市泉川町６６９−３",
+    "partialMatch": false
+  },
+  "栃木市泉町1-11": {
+    "lat": 36.3847291,
+    "lng": 139.734812,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町１−１１",
+    "partialMatch": false
+  },
+  "栃木市泉町18-6": {
+    "lat": 36.3851669,
+    "lng": 139.7354673,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町１８−６",
+    "partialMatch": false
+  },
+  "栃木市泉町2-21": {
+    "lat": 36.3857027,
+    "lng": 139.7335956,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町２−２１",
+    "partialMatch": false
+  },
+  "栃木市泉町25-20": {
+    "lat": 36.3857265,
+    "lng": 139.7393764,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町２５−２０",
+    "partialMatch": false
+  },
+  "栃木市泉町3-5": {
+    "lat": 36.3849563,
+    "lng": 139.7342874,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町３−５",
+    "partialMatch": false
+  },
+  "栃木市泉町7-22": {
+    "lat": 36.3875298,
+    "lng": 139.7354344,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町７−２２",
+    "partialMatch": false
+  },
+  "栃木市泉町7-23": {
+    "lat": 36.3876521,
+    "lng": 139.7354349,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町７−２３",
+    "partialMatch": false
+  },
+  "栃木市泉町7-26": {
+    "lat": 36.3871762,
+    "lng": 139.7352258,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町７−２６",
+    "partialMatch": false
+  },
+  "栃木市泉町8-17": {
+    "lat": 36.3866017,
+    "lng": 139.7351386,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町８−１７",
+    "partialMatch": false
+  },
+  "栃木市湊町1-14": {
+    "lat": 36.3774547,
+    "lng": 139.7296777,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町１",
+    "partialMatch": false
+  },
+  "栃木市湊町10-12": {
+    "lat": 36.3784489,
+    "lng": 139.7305352,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町１０−１２",
+    "partialMatch": false
+  },
+  "栃木市湊町11-12": {
+    "lat": 36.3791774,
+    "lng": 139.7308432,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町１１−１２",
+    "partialMatch": false
+  },
+  "栃木市湊町12-3": {
+    "lat": 36.3794514,
+    "lng": 139.7309256,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町１２−３",
+    "partialMatch": false
+  },
+  "栃木市湊町6-13": {
+    "lat": 36.3797318,
+    "lng": 139.729895,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町６−１３",
+    "partialMatch": false
+  },
+  "栃木市湊町7-1": {
+    "lat": 36.3796063,
+    "lng": 139.730702,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町７−１",
+    "partialMatch": false
+  },
+  "栃木市湊町7-3": {
+    "lat": 36.3797865,
+    "lng": 139.7303498,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町７−３",
+    "partialMatch": false
+  },
+  "栃木市湊町8-7": {
+    "lat": 36.3795474,
+    "lng": 139.7303032,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町８−７",
+    "partialMatch": false
+  },
+  "栃木市湊町７−３": {
+    "lat": 36.3797865,
+    "lng": 139.7303498,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0045 栃木県栃木市湊町７−３",
+    "partialMatch": false
+  },
+  "栃木市片柳町1-27-25": {
+    "lat": 36.3776823,
+    "lng": 139.7239713,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町１丁目２７−２５",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-12-25": {
+    "lat": 36.3700286,
+    "lng": 139.7181438,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目１２−２５",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-14-20": {
+    "lat": 36.372161,
+    "lng": 139.7207358,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目１４−２０",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-15-3": {
+    "lat": 36.370459,
+    "lng": 139.7196402,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目１５−３",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-16-22": {
+    "lat": 36.3710828,
+    "lng": 139.7203314,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目１６−２２",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-17-1": {
+    "lat": 36.3700624,
+    "lng": 139.7191424,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目１７−１",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-2-1": {
+    "lat": 36.3700434,
+    "lng": 139.7249677,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目２−１",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-2-2": {
+    "lat": 36.371417,
+    "lng": 139.7260061,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目２−２",
+    "partialMatch": false
+  },
+  "栃木市片柳町2-3-46": {
+    "lat": 36.3723061,
+    "lng": 139.7242516,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目３−４６",
+    "partialMatch": false
+  },
+  "栃木市片柳町2丁目16-19": {
+    "lat": 36.3706738,
+    "lng": 139.7199864,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目１６−１９ １６番１９号",
+    "partialMatch": false
+  },
+  "栃木市片柳町4-14-16": {
+    "lat": 36.3699284,
+    "lng": 139.7152521,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町４丁目１４−１６",
+    "partialMatch": false
+  },
+  "栃木市片柳町4-2-10": {
+    "lat": 36.3681053,
+    "lng": 139.7178775,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町４丁目２−１０",
+    "partialMatch": false
+  },
+  "栃木市片柳町4-2-28": {
+    "lat": 36.3682221,
+    "lng": 139.7174454,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町４丁目２−２８",
+    "partialMatch": false
+  },
+  "栃木市片柳町4-2-32": {
+    "lat": 36.368561,
+    "lng": 139.7177856,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町４丁目２−３２",
+    "partialMatch": false
+  },
+  "栃木市片柳町4-2-32ヤオハンNEW西店内": {
+    "lat": 36.368595,
+    "lng": 139.717819,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町４丁目２−３２",
+    "partialMatch": true
+  },
+  "栃木市片柳町5-10-31": {
+    "lat": 36.3731442,
+    "lng": 139.7136784,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町５丁目１０−３１",
+    "partialMatch": false
+  },
+  "栃木市片柳町5-4-37": {
+    "lat": 36.3719495,
+    "lng": 139.7159532,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町５丁目４−３７",
+    "partialMatch": false
+  },
+  "栃木市片柳町5-601-4": {
+    "lat": 36.3721981,
+    "lng": 139.7147533,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町５丁目",
+    "partialMatch": false
+  },
+  "栃木市片柳町２－４－３５": {
+    "lat": 36.3723923,
+    "lng": 139.7229571,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0053 栃木県栃木市片柳町２丁目４−３５",
+    "partialMatch": false
+  },
+  "栃木市祝町3-16": {
+    "lat": 36.3805659,
+    "lng": 139.7254775,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0052 栃木県栃木市祝町３−１６",
+    "partialMatch": false
+  },
+  "栃木市祝町4-28": {
+    "lat": 36.3789646,
+    "lng": 139.7259367,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0052 栃木県栃木市祝町４−２８",
+    "partialMatch": false
+  },
+  "栃木市祝町6番28号": {
+    "lat": 36.3799001,
+    "lng": 139.7272831,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0052 栃木県栃木市祝町６−２８",
+    "partialMatch": false
+  },
+  "栃木市祝町7-19": {
+    "lat": 36.3800283,
+    "lng": 139.7294682,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0052 栃木県栃木市祝町７−１９",
+    "partialMatch": false
+  },
+  "栃木市祝町7-20": {
+    "lat": 36.3799608,
+    "lng": 139.7295433,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0052 栃木県栃木市祝町７−２０",
+    "partialMatch": false
+  },
+  "栃木市祝町7-26": {
+    "lat": 36.380047,
+    "lng": 139.728547,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0052 栃木県栃木市祝町７−２６",
+    "partialMatch": false
+  },
+  "栃木市神田町15-30": {
+    "lat": 36.37843290000001,
+    "lng": 139.7484432,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0032 栃木県栃木市神田町１５−３０",
+    "partialMatch": false
+  },
+  "栃木市神田町1－16": {
+    "lat": 36.3773887,
+    "lng": 139.7427301,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0032 栃木県栃木市神田町１−１６",
+    "partialMatch": false
+  },
+  "栃木市神田町21-21": {
+    "lat": 36.3804352,
+    "lng": 139.7482036,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0032 栃木県栃木市神田町２１−２１",
+    "partialMatch": false
+  },
+  "栃木市神田町22-8": {
+    "lat": 36.3801598,
+    "lng": 139.74881,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0032 栃木県栃木市神田町２２−８",
+    "partialMatch": false
+  },
+  "栃木市神田町5-7": {
+    "lat": 36.3800531,
+    "lng": 139.7427516,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0032 栃木県栃木市神田町５−７",
+    "partialMatch": false
+  },
+  "栃木市箱森町11-3": {
+    "lat": 36.386281,
+    "lng": 139.717588,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１１−３",
+    "partialMatch": false
+  },
+  "栃木市箱森町11-4": {
+    "lat": 36.3868289,
+    "lng": 139.7174219,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１１−４",
+    "partialMatch": false
+  },
+  "栃木市箱森町11-42": {
+    "lat": 36.3869362,
+    "lng": 139.7180413,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１１−４２",
+    "partialMatch": false
+  },
+  "栃木市箱森町12-15": {
+    "lat": 36.3868509,
+    "lng": 139.7191099,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１２−１５ とりせん栃木店",
+    "partialMatch": false
+  },
+  "栃木市箱森町12-15 とりせん栃木2F": {
+    "lat": 36.3862652,
+    "lng": 139.7194617,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１２−１５",
+    "partialMatch": true
+  },
+  "栃木市箱森町12-3": {
+    "lat": 36.3858028,
+    "lng": 139.7196811,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１２−３",
+    "partialMatch": false
+  },
+  "栃木市箱森町14-28": {
+    "lat": 36.3888601,
+    "lng": 139.7198756,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１４−２８",
+    "partialMatch": false
+  },
+  "栃木市箱森町14-33": {
+    "lat": 36.3880701,
+    "lng": 139.7193249,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１４−３３",
+    "partialMatch": false
+  },
+  "栃木市箱森町19-26": {
+    "lat": 36.3894318,
+    "lng": 139.7203702,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町１９−２６",
+    "partialMatch": false
+  },
+  "栃木市箱森町2-27": {
+    "lat": 36.3866758,
+    "lng": 139.724142,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町２−２７",
+    "partialMatch": false
+  },
+  "栃木市箱森町2-31": {
+    "lat": 36.3865767,
+    "lng": 139.7247883,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町２−３１",
+    "partialMatch": false
+  },
+  "栃木市箱森町2-44": {
+    "lat": 36.3860686,
+    "lng": 139.7267743,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町２−４４",
+    "partialMatch": false
+  },
+  "栃木市箱森町26-40": {
+    "lat": 36.3938861,
+    "lng": 139.7206488,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町２６−４０",
+    "partialMatch": false
+  },
+  "栃木市箱森町29-18": {
+    "lat": 36.3916916,
+    "lng": 139.7249035,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町２９−１８",
+    "partialMatch": false
+  },
+  "栃木市箱森町3-61": {
+    "lat": 36.3868529,
+    "lng": 139.7233428,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３−６１",
+    "partialMatch": false
+  },
+  "栃木市箱森町36-10": {
+    "lat": 36.3921947,
+    "lng": 139.7269745,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３６−１０",
+    "partialMatch": false
+  },
+  "栃木市箱森町36-16": {
+    "lat": 36.3927295,
+    "lng": 139.7261044,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３６−１６",
+    "partialMatch": false
+  },
+  "栃木市箱森町36-23": {
+    "lat": 36.3932327,
+    "lng": 139.7255257,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３６−２３",
+    "partialMatch": false
+  },
+  "栃木市箱森町36-28": {
+    "lat": 36.3934073,
+    "lng": 139.7257735,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３６−２８",
+    "partialMatch": false
+  },
+  "栃木市箱森町36-35": {
+    "lat": 36.3940077,
+    "lng": 139.7270836,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３６−３５",
+    "partialMatch": false
+  },
+  "栃木市箱森町36-7": {
+    "lat": 36.392027,
+    "lng": 139.7274691,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３６−７ 隠れ菴忍家",
+    "partialMatch": false
+  },
+  "栃木市箱森町37-9": {
+    "lat": 36.3950042,
+    "lng": 139.7240108,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-8501 栃木県栃木市箱森町３７−９",
+    "partialMatch": false
+  },
+  "栃木市箱森町37-9 イオン栃木店1F": {
+    "lat": 36.3949509,
+    "lng": 139.7239569,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-8501 栃木県栃木市箱森町３７−９",
+    "partialMatch": true
+  },
+  "栃木市箱森町38-63": {
+    "lat": 36.39209779999999,
+    "lng": 139.7253132,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３８−６３",
+    "partialMatch": false
+  },
+  "栃木市箱森町39-50": {
+    "lat": 36.3955066,
+    "lng": 139.721216,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町３９−５０ カーサ・フォレスタB",
+    "partialMatch": false
+  },
+  "栃木市箱森町41-11": {
+    "lat": 36.3942796,
+    "lng": 139.7261377,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町４１−１１",
+    "partialMatch": false
+  },
+  "栃木市箱森町41-3": {
+    "lat": 36.3949598,
+    "lng": 139.7271832,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町４１−３",
+    "partialMatch": false
+  },
+  "栃木市箱森町42-28": {
+    "lat": 36.394131,
+    "lng": 139.7287105,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町４２−２８",
+    "partialMatch": false
+  },
+  "栃木市箱森町46-16": {
+    "lat": 36.3945211,
+    "lng": 139.7312204,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町４６−１６",
+    "partialMatch": false
+  },
+  "栃木市箱森町47-1": {
+    "lat": 36.3949489,
+    "lng": 139.7311471,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町４７−１",
+    "partialMatch": false
+  },
+  "栃木市箱森町48-11": {
+    "lat": 36.39511230000001,
+    "lng": 139.7296378,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町４８−１１",
+    "partialMatch": false
+  },
+  "栃木市箱森町50-15": {
+    "lat": 36.3971024,
+    "lng": 139.7272107,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町５０−１５",
+    "partialMatch": false
+  },
+  "栃木市箱森町51-26": {
+    "lat": 36.3981532,
+    "lng": 139.7287229,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町５１−２６",
+    "partialMatch": false
+  },
+  "栃木市箱森町51-33": {
+    "lat": 36.3975881,
+    "lng": 139.7303961,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町５１",
+    "partialMatch": false
+  },
+  "栃木市箱森町52-4": {
+    "lat": 36.3950304,
+    "lng": 139.7314174,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町５２−４",
+    "partialMatch": false
+  },
+  "栃木市箱森町6-27": {
+    "lat": 36.3856847,
+    "lng": 139.7200449,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町６−２７",
+    "partialMatch": false
+  },
+  "栃木市箱森町字岡堀690-1": {
+    "lat": 36.3920566,
+    "lng": 139.723053,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0075 栃木県栃木市箱森町",
+    "partialMatch": true
+  },
+  "栃木市薗部町1-14-37": {
+    "lat": 36.3823484,
+    "lng": 139.7207573,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町１丁目１４−３７",
+    "partialMatch": false
+  },
+  "栃木市薗部町1-18-10": {
+    "lat": 36.3832792,
+    "lng": 139.7171221,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町１丁目１８−１０",
+    "partialMatch": false
+  },
+  "栃木市薗部町1-18-7": {
+    "lat": 36.382851,
+    "lng": 139.7175851,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町１丁目１８−７",
+    "partialMatch": false
+  },
+  "栃木市薗部町1-8-1": {
+    "lat": 36.37892009999999,
+    "lng": 139.723121,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町１丁目８−１",
+    "partialMatch": false
+  },
+  "栃木市薗部町2-13-18": {
+    "lat": 36.376498,
+    "lng": 139.7161122,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町２丁目１３−１８",
+    "partialMatch": false
+  },
+  "栃木市薗部町2-14-13": {
+    "lat": 36.3768256,
+    "lng": 139.7173592,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町２丁目１４−１３",
+    "partialMatch": false
+  },
+  "栃木市薗部町2-19-36": {
+    "lat": 36.3769707,
+    "lng": 139.7156364,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町２丁目１９−３６",
+    "partialMatch": false
+  },
+  "栃木市薗部町2丁目17-11": {
+    "lat": 36.37747969999999,
+    "lng": 139.7166739,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町２丁目１７−１１",
+    "partialMatch": false
+  },
+  "栃木市薗部町3-13-17": {
+    "lat": 36.3824815,
+    "lng": 139.713693,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町３丁目１３−１７",
+    "partialMatch": false
+  },
+  "栃木市薗部町3-2-19": {
+    "lat": 36.3795839,
+    "lng": 139.7171661,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町３丁目２−１９ 2番地19号",
+    "partialMatch": false
+  },
+  "栃木市薗部町4-5-48": {
+    "lat": 36.3784627,
+    "lng": 139.7123154,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0074 栃木県栃木市薗部町４丁目５−４８",
+    "partialMatch": false
+  },
+  "栃木市藤岡1015-5": {
+    "lat": 36.2556157,
+    "lng": 139.6455583,
+    "locationType": "GEOMETRIC_CENTER",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡藤岡駅",
+    "partialMatch": true
+  },
+  "栃木市藤岡町大前1251-23": {
+    "lat": 36.2730097,
+    "lng": 139.6552954,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1101 栃木県栃木市藤岡町大前１２５１−２３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大前3495-12": {
+    "lat": 36.2869596,
+    "lng": 139.6664714,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1101 栃木県栃木市藤岡町大前３４９５−１２",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大前3496-7": {
+    "lat": 36.2866232,
+    "lng": 139.6663748,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1101 栃木県栃木市藤岡町大前３４９６−７",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大前4821-6": {
+    "lat": 36.2719995,
+    "lng": 139.655227,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1101 栃木県栃木市藤岡町大前４８２１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大前4823-12": {
+    "lat": 36.2803335,
+    "lng": 139.6579635,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒323-1101 栃木県栃木市藤岡町大前",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大前925‐８": {
+    "lat": 36.2783037,
+    "lng": 139.6594904,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1101 栃木県栃木市藤岡町大前９２５−８",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大多和650-1": {
+    "lat": 36.25563140000001,
+    "lng": 139.6498315,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡",
+    "partialMatch": true
+  },
+  "栃木市藤岡町大田和678": {
+    "lat": 36.2967044,
+    "lng": 139.6252577,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1107 栃木県栃木市藤岡町大田和６７８",
+    "partialMatch": false
+  },
+  "栃木市藤岡町大田和85-3": {
+    "lat": 36.2924328,
+    "lng": 139.6310565,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1107 栃木県栃木市藤岡町大田和８５−３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町甲266": {
+    "lat": 36.28576150000001,
+    "lng": 139.6347851,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1105 栃木県栃木市藤岡町甲２６６ たび倶楽部",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡10 LUMIERE-F ４号": {
+    "lat": 36.2725371,
+    "lng": 139.6541177,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０ f 4",
+    "partialMatch": true
+  },
+  "栃木市藤岡町藤岡1007-1": {
+    "lat": 36.2634096,
+    "lng": 139.6504899,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１００７−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1011": {
+    "lat": 36.263402,
+    "lng": 139.6501425,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０１１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1013": {
+    "lat": 36.2632867,
+    "lng": 139.6496502,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０１３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1021": {
+    "lat": 36.2624314,
+    "lng": 139.6494064,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０２１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1024": {
+    "lat": 36.2622955,
+    "lng": 139.6500802,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０２４",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1029": {
+    "lat": 36.2619497,
+    "lng": 139.6507669,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０２９",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1166-1": {
+    "lat": 36.2599564,
+    "lng": 139.6520244,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１１６６−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1173": {
+    "lat": 36.2608992,
+    "lng": 139.650201,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１１７３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1198-1": {
+    "lat": 36.2599979,
+    "lng": 139.6507715,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１１９８−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1237-1": {
+    "lat": 36.2579105,
+    "lng": 139.6533747,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１２３７−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1312": {
+    "lat": 36.2588926,
+    "lng": 139.649964,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３１２",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1320": {
+    "lat": 36.2584401,
+    "lng": 139.6504999,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３２０",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1339-1": {
+    "lat": 36.2571301,
+    "lng": 139.6499537,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３３９−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1343-1": {
+    "lat": 36.2566505,
+    "lng": 139.6500019,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３４３−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1347-1": {
+    "lat": 36.2561189,
+    "lng": 139.6498093,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３４７−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1378-3": {
+    "lat": 36.2537137,
+    "lng": 139.6483086,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３７８−３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1389-1": {
+    "lat": 36.2546974,
+    "lng": 139.6492673,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１３８９−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1747": {
+    "lat": 36.2508872,
+    "lng": 139.6522054,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１７４７",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1845-11": {
+    "lat": 36.252382,
+    "lng": 139.6474038,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１８４５−１１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1870": {
+    "lat": 36.2506296,
+    "lng": 139.6465187,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１８７０",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1937-1": {
+    "lat": 36.2495357,
+    "lng": 139.64998,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１９３７",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡1990-21": {
+    "lat": 36.2483486,
+    "lng": 139.6513281,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１９９０−２１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡218-5": {
+    "lat": 36.2676165,
+    "lng": 139.6551422,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２１８−５",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡219-2": {
+    "lat": 36.2671297,
+    "lng": 139.6540615,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２１９−２",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡220-10": {
+    "lat": 36.2672823,
+    "lng": 139.6553822,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２２０−１０",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡222-9": {
+    "lat": 36.2661218,
+    "lng": 139.6544716,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２２２−９",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡230": {
+    "lat": 36.2678102,
+    "lng": 139.6534482,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２３０",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡2428-1": {
+    "lat": 36.2413394,
+    "lng": 139.6502408,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２４２８−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡2645": {
+    "lat": 36.240108,
+    "lng": 139.649981,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡２６４５",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡3578-1": {
+    "lat": 36.2493538,
+    "lng": 139.6474211,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡３５７８−１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡5185-6": {
+    "lat": 36.2549658,
+    "lng": 139.6472826,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡５１８５−６",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡5257": {
+    "lat": 36.2565,
+    "lng": 139.6475733,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡５２５７",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡6405-6": {
+    "lat": 36.2587815,
+    "lng": 139.6474435,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡６４０５−６",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡6461-15": {
+    "lat": 36.2701325,
+    "lng": 139.6548743,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡６４６１−１５",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡6461-26": {
+    "lat": 36.271563,
+    "lng": 139.655148,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡６４６１−２６",
+    "partialMatch": false
+  },
+  "栃木市藤岡町藤岡867-16": {
+    "lat": 36.2664526,
+    "lng": 139.6504244,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡８６７−１６",
+    "partialMatch": false
+  },
+  "栃木市藤岡町蛭沼1617": {
+    "lat": 36.2798316,
+    "lng": 139.7087938,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-0312 栃木県栃木市藤岡町蛭沼１６１７番地",
+    "partialMatch": false
+  },
+  "栃木市藤岡町赤麻1162": {
+    "lat": 36.2702681,
+    "lng": 139.675033,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1102 栃木県栃木市藤岡町赤麻１１６２",
+    "partialMatch": false
+  },
+  "栃木市藤岡町赤麻1299-5": {
+    "lat": 36.2758912,
+    "lng": 139.6756899,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1102 栃木県栃木市藤岡町赤麻１２９９−５",
+    "partialMatch": false
+  },
+  "栃木市藤岡町赤麻4243-4": {
+    "lat": 36.2699583,
+    "lng": 139.676713,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1102 栃木県栃木市藤岡町赤麻４２４３−４",
+    "partialMatch": false
+  },
+  "栃木市藤岡町赤麻4642-3": {
+    "lat": 36.2692535,
+    "lng": 139.6760968,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1102 栃木県栃木市藤岡町赤麻４６４２−３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町部屋461": {
+    "lat": 36.2746338,
+    "lng": 139.7131783,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-0315 栃木県栃木市藤岡町部屋４６１",
+    "partialMatch": false
+  },
+  "栃木市藤岡町部屋684": {
+    "lat": 36.2682256,
+    "lng": 139.711887,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒329-0315 栃木県栃木市藤岡町部屋６８４",
+    "partialMatch": false
+  },
+  "栃木市藤岡町都賀1573": {
+    "lat": 36.2862474,
+    "lng": 139.6206203,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1106 栃木県栃木市藤岡町都賀１５７３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町都賀390-33": {
+    "lat": 36.2756159,
+    "lng": 139.6276266,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1106 栃木県栃木市藤岡町都賀３９０−３３",
+    "partialMatch": false
+  },
+  "栃木市藤岡町都賀769": {
+    "lat": 36.27769139999999,
+    "lng": 139.6186849,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1106 栃木県栃木市藤岡町都賀７６９",
+    "partialMatch": false
+  },
+  "栃木市西方町元1316-2": {
+    "lat": 36.4603157,
+    "lng": 139.7296116,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0604 栃木県栃木市西方町元１３１６−２",
+    "partialMatch": false
+  },
+  "栃木市西方町元2313-2": {
+    "lat": 36.458677,
+    "lng": 139.733972,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0604 栃木県栃木市西方町元２３１３−２",
+    "partialMatch": false
+  },
+  "栃木市西方町元369-1": {
+    "lat": 36.4670027,
+    "lng": 139.7429502,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0604 栃木県栃木市西方町元３６９−１",
+    "partialMatch": false
+  },
+  "栃木市西方町元820-3": {
+    "lat": 36.468087,
+    "lng": 139.7323626,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0604 栃木県栃木市西方町元８２０−３",
+    "partialMatch": false
+  },
+  "栃木市西方町元851-1": {
+    "lat": 36.4644549,
+    "lng": 139.7324611,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0604 栃木県栃木市西方町元８５１−１",
+    "partialMatch": false
+  },
+  "栃木市西方町元924-1": {
+    "lat": 36.4600045,
+    "lng": 139.7348238,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0604 栃木県栃木市西方町元９２４−１",
+    "partialMatch": false
+  },
+  "栃木市西方町本城1341-2": {
+    "lat": 36.4727045,
+    "lng": 139.7330918,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0606 栃木県栃木市西方町本城１３４１−２",
+    "partialMatch": false
+  },
+  "栃木市西方町本城44-1": {
+    "lat": 36.4676488,
+    "lng": 139.7429821,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0606 栃木県栃木市西方町本城４４−１",
+    "partialMatch": false
+  },
+  "栃木市西方町本城487-3": {
+    "lat": 36.4710634,
+    "lng": 139.7322963,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0606 栃木県栃木市西方町本城４８７−３",
+    "partialMatch": false
+  },
+  "栃木市西方町本城57-3": {
+    "lat": 36.469729,
+    "lng": 139.7424719,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0606 栃木県栃木市西方町本城５７−３",
+    "partialMatch": false
+  },
+  "栃木市西方町本郷107-1": {
+    "lat": 36.44079740000001,
+    "lng": 139.7357633,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0603 栃木県栃木市西方町本郷１０７−１",
+    "partialMatch": false
+  },
+  "栃木市西方町真名子10-4": {
+    "lat": 36.4645669,
+    "lng": 139.7068106,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0605 栃木県栃木市西方町真名子１０−４",
+    "partialMatch": false
+  },
+  "栃木市西方町真名子1215": {
+    "lat": 36.4731451,
+    "lng": 139.6991264,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0605 栃木県栃木市西方町真名子１２１５",
+    "partialMatch": false
+  },
+  "栃木市西方町金井352": {
+    "lat": 36.4505811,
+    "lng": 139.7557783,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0602 栃木県栃木市西方町金井３５２",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎297-1": {
+    "lat": 36.4676825,
+    "lng": 139.7490799,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎２９７−１",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎301-2": {
+    "lat": 36.4682021,
+    "lng": 139.7477595,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎３０１−２",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎317-1": {
+    "lat": 36.4678162,
+    "lng": 139.7489332,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎３１７−１",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎329-1": {
+    "lat": 36.467742,
+    "lng": 139.7498754,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎３２９−１",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎733-1": {
+    "lat": 36.468723,
+    "lng": 139.7501195,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎７３３",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎739-1": {
+    "lat": 36.4676597,
+    "lng": 139.7506244,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎７３９−１",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎754-3": {
+    "lat": 36.4666422,
+    "lng": 139.7511269,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎７５４−３",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎789－1": {
+    "lat": 36.4631995,
+    "lng": 139.7523086,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎７８９−１",
+    "partialMatch": false
+  },
+  "栃木市西方町金崎字木ノ下263-1": {
+    "lat": 36.4677437,
+    "lng": 139.7498754,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎",
+    "partialMatch": true
+  },
+  "栃木市都賀町升塚508-3": {
+    "lat": 36.4171506,
+    "lng": 139.7436859,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0114 栃木県栃木市都賀町升塚５０８−３",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場1003-3": {
+    "lat": 36.408355,
+    "lng": 139.744336,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県下都賀郡栃木市都賀町合戦場１００３−３",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場209-1": {
+    "lat": 36.4057812,
+    "lng": 139.745841,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場２０９−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場3295": {
+    "lat": 36.4071512,
+    "lng": 139.7434881,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場708": {
+    "lat": 36.4027222,
+    "lng": 139.7405227,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場７０８",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場732-1": {
+    "lat": 36.4051998,
+    "lng": 139.7420548,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場７３２−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場743": {
+    "lat": 36.4053407,
+    "lng": 139.7426078,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場７４３",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場768": {
+    "lat": 36.4064878,
+    "lng": 139.7433311,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場７６８",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場798": {
+    "lat": 36.4078393,
+    "lng": 139.7445477,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場７９８",
+    "partialMatch": false
+  },
+  "栃木市都賀町合戦場861-1": {
+    "lat": 36.4025537,
+    "lng": 139.7470185,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0113 栃木県栃木市都賀町合戦場８６１",
+    "partialMatch": false
+  },
+  "栃木市都賀町大柿1312": {
+    "lat": 36.4560186,
+    "lng": 139.700339,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0101 栃木県栃木市都賀町大柿１３１２",
+    "partialMatch": false
+  },
+  "栃木市都賀町大柿1511-2": {
+    "lat": 36.4562001,
+    "lng": 139.7082582,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0101 栃木県栃木市都賀町大柿１５１１−２",
+    "partialMatch": false
+  },
+  "栃木市都賀町大柿3131-5": {
+    "lat": 36.4510856,
+    "lng": 139.6930191,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0101 栃木県栃木市都賀町大柿３１３１−５",
+    "partialMatch": false
+  },
+  "栃木市都賀町大柿334-5": {
+    "lat": 36.4512084,
+    "lng": 139.6921509,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0101 栃木県栃木市都賀町大柿３３４−５",
+    "partialMatch": false
+  },
+  "栃木市都賀町大橋198－1": {
+    "lat": 36.43572169999999,
+    "lng": 139.7205601,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0106 栃木県栃木市都賀町大橋１９８−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中1727-1": {
+    "lat": 36.4283168,
+    "lng": 139.7513332,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中１７２７−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中1727-1（ジョイフーズ内）": {
+    "lat": 36.4283168,
+    "lng": 139.7513332,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中１７２７−１",
+    "partialMatch": true
+  },
+  "栃木市都賀町家中1884-1": {
+    "lat": 36.4212672,
+    "lng": 139.7499952,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中１８８４−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2083 1F": {
+    "lat": 36.4189064,
+    "lng": 139.749724,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２０８３ 1f",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2083 2F": {
+    "lat": 36.4189064,
+    "lng": 139.749724,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２０８３ 2f",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2115": {
+    "lat": 36.4211351,
+    "lng": 139.7493826,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２１１５",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2173": {
+    "lat": 36.4222332,
+    "lng": 139.749289,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２１７３",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2334": {
+    "lat": 36.4277588,
+    "lng": 139.74943,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２３３４",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2336-10": {
+    "lat": 36.4279933,
+    "lng": 139.7492638,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２３３６−１０",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中2336-13": {
+    "lat": 36.4280874,
+    "lng": 139.7497015,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中２３３６−１３",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中5081−1": {
+    "lat": 36.4475705,
+    "lng": 139.7565499,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中５０８１−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中5947-6": {
+    "lat": 36.4308931,
+    "lng": 139.7477845,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中５９４７−６",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中5973": {
+    "lat": 36.4287558,
+    "lng": 139.7488873,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中５９７３",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中5986-6": {
+    "lat": 36.4279142,
+    "lng": 139.7481232,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中５９８６−６",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中6125-4": {
+    "lat": 36.4281695,
+    "lng": 139.7395961,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中６１２５−４",
+    "partialMatch": false
+  },
+  "栃木市都賀町家中字三ツ塚1870番1": {
+    "lat": 36.4314386,
+    "lng": 139.7401527,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0103 栃木県栃木市都賀町原宿５７３",
+    "partialMatch": true
+  },
+  "栃木市都賀町家中小松原7775": {
+    "lat": 36.4278437,
+    "lng": 139.7491518,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0111 栃木県栃木市都賀町家中",
+    "partialMatch": true
+  },
+  "栃木市都賀町平川461-1": {
+    "lat": 36.4083178,
+    "lng": 139.7482231,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0112 栃木県栃木市都賀町平川４６１−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町平川584-1": {
+    "lat": 36.4067947,
+    "lng": 139.7516415,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0112 栃木県栃木市都賀町平川５８４−１",
+    "partialMatch": false
+  },
+  "栃木市都賀町平川661-1": {
+    "lat": 36.4090086,
+    "lng": 139.7537082,
+    "locationType": "APPROXIMATE",
+    "formatted": "日本、〒328-0112 栃木県栃木市都賀町平川",
+    "partialMatch": false
+  },
+  "栃木市都賀町木1567": {
+    "lat": 36.4347987,
+    "lng": 139.7202097,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0104 栃木県栃木市都賀町木１５６７",
+    "partialMatch": false
+  },
+  "栃木市都賀町臼久保325": {
+    "lat": 36.4333603,
+    "lng": 139.713969,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0105 栃木県栃木市都賀町臼久保３２５",
+    "partialMatch": false
+  },
+  "栃木市野中町1352-11": {
+    "lat": 36.3964043,
+    "lng": 139.7212821,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１３５２−１１",
+    "partialMatch": false
+  },
+  "栃木市野中町1356-10": {
+    "lat": 36.3991229,
+    "lng": 139.7199834,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１３５６−１０",
+    "partialMatch": false
+  },
+  "栃木市野中町1365-6": {
+    "lat": 36.3966046,
+    "lng": 139.7243267,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１３６５−６",
+    "partialMatch": false
+  },
+  "栃木市野中町1376-6": {
+    "lat": 36.3975465,
+    "lng": 139.7256128,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１３７６−６",
+    "partialMatch": false
+  },
+  "栃木市野中町1380-2": {
+    "lat": 36.3981395,
+    "lng": 139.7259362,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１３８０",
+    "partialMatch": false
+  },
+  "栃木市野中町1382-6": {
+    "lat": 36.3986603,
+    "lng": 139.7221951,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１３８２−６",
+    "partialMatch": false
+  },
+  "栃木市野中町199-1": {
+    "lat": 36.3986953,
+    "lng": 139.718356,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町１９９−１",
+    "partialMatch": false
+  },
+  "栃木市野中町346": {
+    "lat": 36.3959794,
+    "lng": 139.7178176,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町３４６",
+    "partialMatch": false
+  },
+  "栃木市野中町36-1": {
+    "lat": 36.3982556,
+    "lng": 139.7249286,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町３６−１",
+    "partialMatch": false
+  },
+  "栃木市野中町448-1": {
+    "lat": 36.4020644,
+    "lng": 139.7140594,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町４４８−１",
+    "partialMatch": false
+  },
+  "栃木市野中町465-1": {
+    "lat": 36.4002153,
+    "lng": 139.7153511,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町４６５",
+    "partialMatch": false
+  },
+  "栃木市野中町503-1": {
+    "lat": 36.3989094,
+    "lng": 139.7171501,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町５０３",
+    "partialMatch": false
+  },
+  "栃木市野中町701": {
+    "lat": 36.4061018,
+    "lng": 139.72104,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0124 栃木県栃木市野中町７０１",
+    "partialMatch": false
+  },
+  "栃木市金崎592-4": {
+    "lat": 36.4733868,
+    "lng": 139.7471378,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒322-0601 栃木県栃木市西方町金崎５９２−４",
+    "partialMatch": false
+  },
+  "栃木市錦町14-3": {
+    "lat": 36.3863764,
+    "lng": 139.7279623,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0017 栃木県栃木市錦町１４−３",
+    "partialMatch": false
+  },
+  "栃木市錦町7-10": {
+    "lat": 36.3864639,
+    "lng": 139.7290582,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0017 栃木県栃木市錦町７−１０",
+    "partialMatch": false
+  },
+  "栃木市錦町7-7": {
+    "lat": 36.3860877,
+    "lng": 139.7288247,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0017 栃木県栃木市錦町７−７",
+    "partialMatch": false
+  }
+}

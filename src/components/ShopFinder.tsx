@@ -1,11 +1,24 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { useEffect, useMemo, useState } from 'react'
 import { FilterBar } from '@/components/FilterBar'
 import { ShopCard } from '@/components/ShopCard'
 import { EMPTY_FILTERS, type Filters, filterShops, hasActiveFilters } from '@/lib/filter'
 import { loadShops } from '@/lib/load-shops'
 import type { Shop } from '@/lib/shop'
+
+/**
+ * 地図は**タブが開かれるまで読み込まない**。
+ *
+ * 地図関連のコードは別チャンクに切り出され、リストだけを見る利用者には配信されない。
+ * Google Maps 本体の読み込み（課金対象の map load が発生する）も同様に、
+ * 実際に地図を表示する段になって初めて走る。
+ */
+const ShopMap = dynamic(() => import('@/components/map/ShopMap').then((m) => m.ShopMap), {
+  ssr: false,
+  loading: () => <p className="notice">地図を読み込み中…</p>,
+})
 
 type Tab = 'list' | 'map'
 
@@ -106,13 +119,12 @@ export function ShopFinder() {
               </ul>
             ))}
 
-          {tab === 'map' && (
-            <p className="notice">
-              地図は準備中です。
-              <br />
-              各お店の「地図で開く」から Google マップを開けます。
-            </p>
-          )}
+          {tab === 'map' &&
+            (results.length === 0 ? (
+              <p className="notice">条件に合うお店がありません。</p>
+            ) : (
+              <ShopMap shops={results} />
+            ))}
         </>
       )}
     </div>

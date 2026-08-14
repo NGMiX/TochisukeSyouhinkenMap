@@ -11,11 +11,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - リスト画面（検索＋券種・業種・地区の絞り込み）
 - 静的エクスポート（`bun run build`）と `/tochisuke/` 配下での配信確認（`bun run preview`）
 
-未実装:
+- ジオコーディング実行済み。**626 / 655 件（95.6%）に座標あり**。
+  API 使用量は計 645 リクエスト（無料枠 10,000/月）。結果は `data/geocode-cache.json` にあり、
+  再実行しても問い合わせは発生しない。
+- 地図タブ（クラスタリング、絞り込み結果のみ描画、遅延ロード）
+- ブラウザでの動作確認（Playwright + 実 API キー。検索・絞り込み・地図描画）
 
-- **ジオコーディングの実行**。スクリプト（`scripts/geocode.ts`）は書いたが、
-  API キーが未設定のため**まだ 1 件も座標が入っていない**（全店 `lat`/`lng` が `null`）。
-- **地図タブ**。現状はプレースホルダを表示するだけ。座標が入るまで実装しない。
+未実装・未対応:
+
+- **座標が付かなかった 29 件**。`bun run geocode` の警告に一覧が出る。
+  住所を直すか `data/geocode-cache.json` に手で座標を入れると解消する。
+  現状はリストに出るが地図には出ない。
+- **本番用の Map ID**。未設定なので `DEMO_MAP_ID` にフォールバックしている。
+  Cloud Console で作って `NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID` に設定すること。
 
 実装と食い違いを見つけたら、コードに合わせてこのファイルを直す（逆はしない）。
 
@@ -325,6 +333,18 @@ JSON では真偽値 1 個（大型店舗かどうか）で表現でき、そこ
   精度不足になることがある。**解決できなかった住所は一覧で出力し、人が確認する。**
   黙って市役所の座標などにフォールバックさせない（誤った位置に店が出るのが最悪）。
 - 座標が無い店も**リストには必ず出す**。地図に出ないだけにする。データから落とさない。
+
+#### Maps API 読み込みの罠（実際に踏んだ）
+
+**`script.onload` では地図を初期化できない。** `loading=async` を付けた場合、onload の時点で
+`window.google.maps` は存在するが `Map` クラスがまだ生えておらず、
+`new maps.Map(...)` が `Map is not a constructor` で落ちる。
+
+準備完了を知る手段は **`callback` パラメータ**。`maps/api/js?...&callback=関数名` の形で
+グローバル関数名を渡し、それが呼ばれてから初期化する（`src/components/map/loader.ts`）。
+
+なお `google.maps.importLibrary()` はインラインのブートストラップ版でのみ提供され、
+**素の `<script src>` 方式では使えない**（`importLibrary is not a function` になる）。
 
 #### Google Maps の費用とキー運用
 

@@ -103,9 +103,26 @@ body {
 
 .chips {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.4rem;
   margin: 0.5rem 0;
+}
+
+/*
+  業種 9 個・地区 6 個を折り返すと、ヘッダーだけでスマホの画面高の半分以上を占める。
+  ヘッダーは sticky なのでスクロールしても解消せず、一覧が常に狭いままになる。
+  1 行に収めて横スクロールさせ、縦を取り戻す。
+*/
+.chips-scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* スクロールしたチップが端で切れて見えるよう、左右に余白を出す */
+  padding: 0 1rem;
+  margin-inline: -1rem;
+  scrollbar-width: none;
+}
+
+.chips-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .chip {
@@ -123,6 +140,11 @@ body {
   color: var(--accent-contrast);
   background: var(--accent);
   border-color: var(--accent);
+}
+
+/* 横スクロール行では縮ませない（基底の .chip より後に置く必要がある） */
+.chips-scroll .chip {
+  flex: 0 0 auto;
 }
 
 .chip-yellow[aria-pressed="true"] {
@@ -202,6 +224,8 @@ body {
 }
 
 .card .kana {
+  /* 店名の直後に続けると「104school&lifeイチマルヨンスクール…」と読めなくなる */
+  display: block;
   font-size: 0.7rem;
   font-weight: 400;
   color: var(--text-muted);
@@ -286,4 +310,22 @@ body {
     color: #ff9a94;
     border-color: #6b2b26;
   }
+}
+
+/* ---- 地図 ---- */
+
+.map {
+  /* スマホで地図が小さすぎると使えないため、画面高さから
+     ヘッダー分を引いた高さを確保する。 */
+  height: min(70vh, 640px);
+  margin: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.map-note {
+  margin: 0 1rem 1rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }

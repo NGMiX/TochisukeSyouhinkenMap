@@ -40,11 +40,43 @@ type CacheEntry = {
 type Cache = Record<string, CacheEntry | null>
 
 /**
- * 町の代表点に落ちた結果は店舗の位置として使えない。
- * `partial_match` も住所の解釈がずれている合図なので採用しない。
+ * 住所から番地の並びを取り出す（`大平町富田558-11プラッツ内` → `['558','11']`）。
+ *
+ * 町名の直後にある最初の「数字とハイフンの並び」だけを見る。
+ * それ以降はテナント名や部屋番号が続くことが多く、含めると判定が濁る。
  */
-function isTrustworthy(entry: CacheEntry): boolean {
-  return entry.locationType !== 'APPROXIMATE' && !entry.partialMatch
+function banchi(address: string): string[] {
+  const normalized = address.normalize('NFKC').replace(/[‐‑‒–—―−ー]/g, '-')
+  const match = normalized.match(/\d+(?:-\d+)*/)
+  return match === null ? [] : match[0].split('-')
+}
+
+/**
+ * 結果を店舗の位置として信用してよいか。
+ *
+ * 実データ 635 件の分布:
+ *   589 ROOFTOP / 21 ROOFTOP+partial / 11 APPROXIMATE+partial
+ *     5 GEOMETRIC_CENTER / 5 APPROXIMATE / 4 GEOMETRIC_CENTER+partial
+ *
+ * - `APPROXIMATE` と `GEOMETRIC_CENTER` は町や通りの代表点。店舗の位置にならないので捨てる。
+ * - `partial_match` の多くは「番地は合っているがテナント名が一致しなかった」だけで、
+ *   座標としては正しい（例: `大平町富田558-11プラッツ大平内` → `大平町富田558-11`）。
+ *   一方で番地ごと別地点に飛ぶ例もある（例: `都賀町家中字三ツ塚1870番1` → `都賀町原宿573`）。
+ *   **番地が返り値に含まれるかで機械的に切り分ける。**
+ *
+ * 誤った位置に店を出すのが最悪の結果なので、判断が付かないものは座標を付けない。
+ */
+function isTrustworthy(entry: CacheEntry, address: string): boolean {
+  if (entry.locationType !== 'ROOFTOP' && entry.locationType !== 'RANGE_INTERPOLATED') {
+    return false
+  }
+  if (!entry.partialMatch) return true
+
+  const parts = banchi(address)
+  if (parts.length === 0) return false
+  const formatted = entry.formatted.normalize('NFKC').replace(/[‐‑‒–—―−ー]/g, '-')
+  // 番地の各要素が数値として現れることを見る（「20」が「200」に当たらないよう境界を付ける）。
+  return parts.every((part) => new RegExp(`(?<!\\d)${part}(?!\\d)`).test(formatted))
 }
 
 async function readCache(): Promise<Cache> {
@@ -161,7 +193,7 @@ async function main(): Promise<void> {
       shop.lng = null
       continue
     }
-    if (!isTrustworthy(entry)) {
+    if (!isTrustworthy(entry, shop.address)) {
       untrusted.push(
         `${shop.name} / ${shop.address} → ${entry.formatted}` +
           ` (${entry.locationType}${entry.partialMatch ? ', partial_match' : ''})`,

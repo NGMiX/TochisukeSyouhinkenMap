@@ -39,7 +39,7 @@ export function FilterBar({ filters, onChange }: Props) {
 
       <div className="filter-group">
         <div className="filter-label">業種</div>
-        <div className="chips">
+        <div className="chips chips-scroll">
           {CATEGORY_ORDER.map((code) => (
             <button
               key={code}
@@ -61,7 +61,7 @@ export function FilterBar({ filters, onChange }: Props) {
 
       <div className="filter-group">
         <div className="filter-label">地区</div>
-        <div className="chips">
+        <div className="chips chips-scroll">
           {AREA_ORDER.map((code) => (
             <button
               key={code}
