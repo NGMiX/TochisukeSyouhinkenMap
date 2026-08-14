@@ -1,0 +1,289 @@
+/* スマートフォンからの利用が主。まず狭い画面で成立させ、広い画面は上書きで対応する。 */
+
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --border: #dfe3e8;
+  --text: #1a1d21;
+  --text-muted: #5c6470;
+  --accent: #0b6bcb;
+  --accent-contrast: #ffffff;
+
+  /* のぼり旗の色に対応させる。店頭で実物を見分ける手がかりでもあるため、
+     アプリ上の色も券の色から離さない。 */
+  --ticket-yellow: #e8a600;
+  --ticket-blue: #1f6feb;
+
+  --radius: 10px;
+  --tap-target: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --surface: #1c2024;
+    --border: #2f353c;
+    --text: #e8eaed;
+    --text-muted: #9aa4b2;
+    --accent: #4a9eff;
+    --accent-contrast: #0b1116;
+    --ticket-yellow: #f0b429;
+    --ticket-blue: #58a6ff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo,
+    sans-serif;
+  line-height: 1.6;
+  /* iOS Safari で入力欄フォーカス時に勝手に拡大されるのを防ぐ */
+  -webkit-text-size-adjust: 100%;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* ---- ヘッダー（検索と絞り込み。スクロールしても残す） ---- */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem 0;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.title span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.search {
+  width: 100%;
+  height: var(--tap-target);
+  padding: 0 0.75rem;
+  font-size: 1rem; /* 16px 未満だと iOS でフォーカス時に拡大される */
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.search:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* ---- 絞り込みチップ ---- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+
+.chip {
+  min-height: 34px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.chip[aria-pressed="true"] {
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.chip-yellow[aria-pressed="true"] {
+  color: #2b2000;
+  background: var(--ticket-yellow);
+  border-color: var(--ticket-yellow);
+}
+
+.filter-group {
+  margin-bottom: 0.25rem;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ---- タブ ---- */
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.tab {
+  flex: 1;
+  min-height: 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tab[aria-selected="true"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---- 件数表示 ---- */
+
+.count {
+  padding: 0.6rem 1rem 0.2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.count strong {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+/* ---- 店舗一覧 ---- */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card {
+  padding: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card .kana {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.card address {
+  margin: 0.35rem 0;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.badge {
+  padding: 0.1rem 0.5rem;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.badge-ticket {
+  font-weight: 600;
+  border: none;
+}
+
+.badge-yellow {
+  color: #2b2000;
+  background: var(--ticket-yellow);
+}
+
+.badge-blue {
+  color: #ffffff;
+  background: var(--ticket-blue);
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.action {
+  flex: 1;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--accent);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* ---- 状態表示 ---- */
+
+.notice {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.notice-error {
+  color: #b42318;
+  border-color: #f2b8b5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .notice-error {
+    color: #ff9a94;
+    border-color: #6b2b26;
+  }
+}

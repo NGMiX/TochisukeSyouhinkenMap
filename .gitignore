@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# typescript
+*.tsbuildinfo
+
+# Claude Code のローカル設定（各自の環境ごとに異なる）
+.claude/settings.local.json
+
+# 環境変数（API キーを含む）
+.env
+.env.local
+.env*.local
+
+# Excel を開いている間に生成されるロックファイル
+~$*
+
+# Windows / macOS が作るもの
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# WSL 経由で Windows からコピーしたときに付く
+*:Zone.Identifier
