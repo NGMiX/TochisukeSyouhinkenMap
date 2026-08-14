@@ -5,8 +5,10 @@ import { useEffect, useMemo, useState } from 'react'
 import { FilterBar } from '@/components/FilterBar'
 import { ShopCard } from '@/components/ShopCard'
 import { EMPTY_FILTERS, type Filters, filterShops, hasActiveFilters } from '@/lib/filter'
+import { type LatLng, type SortOrder, shopDistance, sortShops } from '@/lib/geo'
 import { loadShops } from '@/lib/load-shops'
 import type { Shop } from '@/lib/shop'
+import { useCurrentPosition } from '@/lib/use-current-position'
 
 /**
  * 地図は**タブが開かれるまで読み込まない**。
@@ -27,10 +29,22 @@ type LoadState =
   | { status: 'error'; message: string }
   | { status: 'ready'; shops: Shop[]; sourceLabel: string }
 
+/**
+ * 一度に描くカードの枚数。
+ *
+ * 655 件を一度に組むと、スマートフォンでは初回表示と絞り込みの反応が目に見えて遅れる。
+ * 利用者は上から順に見るので、続きは「さらに表示」で足す。
+ */
+const PAGE_SIZE = 50
+
 export function ShopFinder() {
   const [state, setState] = useState<LoadState>({ status: 'loading' })
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
+  const [order, setOrder] = useState<SortOrder>('default')
   const [tab, setTab] = useState<Tab>('list')
+  const [detailsOpen, setDetailsOpen] = useState(false)
+  const [shown, setShown] = useState(PAGE_SIZE)
+  const position = useCurrentPosition()
 
   useEffect(() => {
     let cancelled = false
@@ -50,10 +64,34 @@ export function ShopFinder() {
     }
   }, [])
 
+  const origin: LatLng | null =
+    position.state.status === 'ready' ? position.state.position : null
+
+  // 現在地が取れなかったら並び順を戻す。押した状態のまま何も起きないと理由が分からない。
+  useEffect(() => {
+    if (position.state.status === 'error') setOrder('default')
+  }, [position.state.status])
+
   const shops = state.status === 'ready' ? state.shops : []
   // 655 件の総当たりで体感遅延は無いが、タブ切り替えや再描画のたびに
   // 走らせる必要はないので条件が変わったときだけ計算する。
-  const results = useMemo(() => filterShops(shops, filters), [shops, filters])
+  const results = useMemo(() => {
+    return sortShops(filterShops(shops, filters), order, origin)
+  }, [shops, filters, order, origin])
+
+  // 条件や並び順が変わったら先頭から見せる。前の続きから始まると読み飛ばしになる。
+  // effect ではなく描画中に直す（effect にすると一瞬だけ前の枚数で描かれる）。
+  const [shownFor, setShownFor] = useState(results)
+  if (shownFor !== results) {
+    setShownFor(results)
+    setShown(PAGE_SIZE)
+  }
+
+  function changeOrder(next: SortOrder) {
+    setOrder(next)
+    // 現在地がまだ無ければ取りに行く。取れた時点で並びが変わる。
+    if (next === 'distance' && position.state.status !== 'ready') position.request()
+  }
 
   return (
     <div className="page">
@@ -63,7 +101,15 @@ export function ShopFinder() {
           {state.status === 'ready' && <span>{state.sourceLabel}</span>}
         </h1>
 
-        <FilterBar filters={filters} onChange={setFilters} />
+        <FilterBar
+          filters={filters}
+          onChange={setFilters}
+          order={order}
+          onOrderChange={changeOrder}
+          positionStatus={position.state.status}
+          detailsOpen={detailsOpen}
+          onDetailsOpenChange={setDetailsOpen}
+        />
 
         <div className="tabs" role="tablist">
           <button
@@ -97,11 +143,18 @@ export function ShopFinder() {
         </p>
       )}
 
+      {position.state.status === 'error' && (
+        <p className="notice notice-warn">{position.state.message}</p>
+      )}
+
       {state.status === 'ready' && (
         <>
           <p className="count">
             <strong>{results.length}</strong> 件
             {hasActiveFilters(filters) && ` / 全 ${shops.length} 件`}
+            {order === 'distance' && origin !== null && (
+              <span className="count-note">現在地から近い順</span>
+            )}
           </p>
 
           {tab === 'list' &&
@@ -112,18 +165,33 @@ export function ShopFinder() {
                 検索語を短くするか、絞り込みを外してみてください。
               </p>
             ) : (
-              <ul className="list">
-                {results.map((shop) => (
-                  <ShopCard key={shop.id} shop={shop} />
-                ))}
-              </ul>
+              <>
+                <ul className="list">
+                  {results.slice(0, shown).map((shop) => (
+                    <ShopCard
+                      key={shop.id}
+                      shop={shop}
+                      distance={shopDistance(shop, origin)}
+                    />
+                  ))}
+                </ul>
+                {results.length > shown && (
+                  <button
+                    type="button"
+                    className="more"
+                    onClick={() => setShown((n) => n + PAGE_SIZE)}
+                  >
+                    さらに表示（残り {results.length - shown} 件）
+                  </button>
+                )}
+              </>
             ))}
 
           {tab === 'map' &&
             (results.length === 0 ? (
               <p className="notice">条件に合うお店がありません。</p>
             ) : (
-              <ShopMap shops={results} />
+              <ShopMap shops={results} origin={origin} />
             ))}
         </>
       )}

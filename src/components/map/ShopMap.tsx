@@ -2,7 +2,8 @@
 
 import { MarkerClusterer } from '@googlemaps/markerclusterer'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { loadGoogleMaps, MAP_ID } from '@/components/map/loader'
+import { loadGoogleMaps, MAP_ID, type MapsApi } from '@/components/map/loader'
+import type { LatLng } from '@/lib/geo'
 import { CATEGORY_LABELS, type Shop } from '@/lib/shop'
 
 /** 栃木市役所付近。座標が 1 件も無いときの初期表示に使う。 */
@@ -11,13 +12,19 @@ const TOCHIGI_CITY_CENTER = { lat: 36.3826, lng: 139.7333 }
 type Props = {
   /** 絞り込み後の店舗。地図には常に絞り込み結果だけを描く。 */
   shops: Shop[]
+  /** 現在地。取得していなければ null。 */
+  origin: LatLng | null
 }
 
-export function ShopMap({ shops }: Props) {
+export function ShopMap({ shops, origin }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
+  // 現在地のマーカーを別の effect で作るため、読み込んだ API を持っておく。
+  const mapsRef = useRef<MapsApi | null>(null)
   const mapRef = useRef<google.maps.Map | null>(null)
   const clustererRef = useRef<MarkerClusterer | null>(null)
   const infoRef = useRef<google.maps.InfoWindow | null>(null)
+  const originMarkerRef = useRef<google.maps.marker.AdvancedMarkerElement | null>(null)
+  const [ready, setReady] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   // 座標を持たない店は地図に出せない。件数は利用者に伝える。
@@ -40,6 +47,7 @@ export function ShopMap({ shops }: Props) {
         if (cancelled || containerRef.current === null) return
 
         if (mapRef.current === null) {
+          mapsRef.current = maps
           mapRef.current = new maps.Map(containerRef.current, {
             center: TOCHIGI_CITY_CENTER,
             zoom: 12,
@@ -51,6 +59,7 @@ export function ShopMap({ shops }: Props) {
             fullscreenControl: false,
           })
           infoRef.current = new maps.InfoWindow()
+          setReady(true)
         }
 
         const map = mapRef.current
@@ -101,6 +110,45 @@ export function ShopMap({ shops }: Props) {
       clustererRef.current?.clearMarkers()
     }
   }, [plottable])
+
+  /**
+   * 現在地のマーカー。
+   *
+   * 店舗のマーカーとは別の effect にする。現在地は店舗の絞り込みとは無関係に
+   * 後から届くため、同じ effect に入れると 655 件のマーカーを作り直すことになる。
+   * クラスタにも入れない（現在地が店舗と一緒に丸められると意味を失う）。
+   */
+  useEffect(() => {
+    const maps = mapsRef.current
+    const map = mapRef.current
+    if (!ready || maps === null || map === null) return
+
+    // 地図から外すのは map に null を入れる（AdvancedMarkerElement の作法）。
+    if (originMarkerRef.current !== null) {
+      originMarkerRef.current.map = null
+      originMarkerRef.current = null
+    }
+
+    if (origin === null) return
+
+    const dot = document.createElement('div')
+    dot.className = 'map-origin'
+    originMarkerRef.current = new maps.AdvancedMarkerElement({
+      map,
+      position: origin,
+      title: '現在地',
+      content: dot,
+      // 店舗のマーカーより手前に出す。
+      zIndex: 1000,
+    })
+
+    return () => {
+      if (originMarkerRef.current !== null) {
+        originMarkerRef.current.map = null
+        originMarkerRef.current = null
+      }
+    }
+  }, [ready, origin])
 
   if (error !== null) {
     return <p className="notice notice-error">{error}</p>

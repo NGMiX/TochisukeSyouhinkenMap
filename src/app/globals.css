@@ -83,10 +83,16 @@ body {
   color: var(--text-muted);
 }
 
+.search-row {
+  position: relative;
+  display: flex;
+}
+
 .search {
   width: 100%;
   height: var(--tap-target);
-  padding: 0 0.75rem;
+  /* 右端はクリアボタンの領域。文字が下に潜らないよう空ける。 */
+  padding: 0 var(--tap-target) 0 0.75rem;
   font-size: 1rem; /* 16px 未満だと iOS でフォーカス時に拡大される */
   color: var(--text);
   background: var(--bg);
@@ -97,6 +103,24 @@ body {
 .search:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
+}
+
+/* ブラウザ標準のクリアボタンは Safari では出ず、Chrome でも指には小さい。自前のものに寄せる。 */
+.search::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--tap-target);
+  height: var(--tap-target);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* ---- 絞り込みチップ ---- */
@@ -140,6 +164,57 @@ body {
   color: var(--accent-contrast);
   background: var(--accent);
   border-color: var(--accent);
+}
+
+.chip:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* 1 行目のチップ（券種・近い順・折りたたみ）。指で押す前提で少し大きくする。 */
+.chips-primary .chip {
+  min-height: 38px;
+  font-size: 0.88rem;
+}
+
+.chip-details {
+  margin-left: auto;
+}
+
+/* 折りたたんだ中に掛かっている条件の数 */
+.chip-count {
+  display: inline-block;
+  min-width: 1.15rem;
+  margin-left: 0.3rem;
+  padding: 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.15rem;
+  text-align: center;
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.chip-details[aria-expanded="true"] .chip-count {
+  color: var(--accent);
+  background: var(--accent-contrast);
+}
+
+.filter-details {
+  padding-top: 0.15rem;
+}
+
+.clear-all {
+  display: block;
+  width: 100%;
+  min-height: 34px;
+  margin: 0.1rem 0 0;
+  font-size: 0.8rem;
+  color: var(--accent);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* 横スクロール行では縮ませない（基底の .chip より後に置く必要がある） */
@@ -200,6 +275,11 @@ body {
   color: var(--text);
 }
 
+.count-note {
+  margin-left: 0.5rem;
+  color: var(--accent);
+}
+
 /* ---- 店舗一覧 ---- */
 
 .list {
@@ -231,11 +311,28 @@ body {
   color: var(--text-muted);
 }
 
-.card address {
+.card-address {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  justify-content: space-between;
   margin: 0.35rem 0;
+}
+
+.card address {
+  margin: 0;
   font-style: normal;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* 現在地からの距離。近い順のときに並びの根拠になるので、住所より目立たせる。 */
+.distance {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
 }
 
 .card-meta {
@@ -288,6 +385,22 @@ body {
   border-radius: var(--radius);
 }
 
+/* ---- さらに表示 ---- */
+
+.more {
+  display: block;
+  width: calc(100% - 2rem);
+  min-height: var(--tap-target);
+  margin: 0.25rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
 /* ---- 状態表示 ---- */
 
 .notice {
@@ -303,6 +416,14 @@ body {
 .notice-error {
   color: #b42318;
   border-color: #f2b8b5;
+}
+
+/* 現在地が取れない等、機能の一部が使えないだけの知らせ。エラーより弱く見せる。 */
+.notice-warn {
+  margin: 0.75rem 1rem 0;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.82rem;
+  text-align: left;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -328,4 +449,14 @@ body {
   margin: 0 1rem 1rem;
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+/* 現在地のマーカー。店舗のピンと混ざらないよう、点で描く。 */
+.map-origin {
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
 }

@@ -1,3 +1,4 @@
+import { formatDistance } from '@/lib/geo'
 import { AREA_LABELS, CATEGORY_LABELS, type Shop } from '@/lib/shop'
 
 /**
@@ -14,7 +15,13 @@ function mapsUrl(shop: Shop): string {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
 }
 
-export function ShopCard({ shop }: { shop: Shop }) {
+type Props = {
+  shop: Shop
+  /** 現在地からの距離（メートル）。現在地が無いか店舗の座標が無ければ null。 */
+  distance: number | null
+}
+
+export function ShopCard({ shop, distance }: Props) {
   return (
     <li className="card">
       <h2>
@@ -22,7 +29,12 @@ export function ShopCard({ shop }: { shop: Shop }) {
         {shop.kana !== '' && <span className="kana">{shop.kana}</span>}
       </h2>
 
-      <address>{shop.address}</address>
+      <div className="card-address">
+        <address>{shop.address}</address>
+        {distance !== null && (
+          <span className="distance">{formatDistance(distance)}</span>
+        )}
+      </div>
 
       <div className="card-meta">
         {/* 券の色は絞り込み条件であると同時に、店頭ののぼり旗と対応する手がかりでもある */}
