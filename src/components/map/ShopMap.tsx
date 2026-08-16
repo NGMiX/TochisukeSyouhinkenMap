@@ -119,7 +119,8 @@ export function ShopMap({ shops, origin }: Props) {
                 ? ''
                 : `<a href="tel:${escapeHtml(shop.tel)}">${escapeHtml(shop.tel)}</a><br>`
             info?.setContent(
-              `<div style="font-size:13px;line-height:1.5">
+              // 配色は globals.css の .map-info で固定する（暗い配色でも白地に載るため）。
+              `<div class="map-info">
                  <strong>${escapeHtml(shop.name)}</strong><br>
                  ${escapeHtml(shop.address)}<br>
                  ${tel}
