@@ -24,7 +24,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 地図タブ（クラスタリング、絞り込み結果のみ描画、遅延ロード、現在地の表示）
 - ブラウザでの動作確認（Playwright + 実 API キー。検索・絞り込み・距離順・地図描画・現在地）
 
-未実装・未対応:
+**2026-08-17 に公開済み**（https://www.ngmix.com/tochisuke/）。
+API キーの制限（ウェブサイト制限・API の制限・割り当て上限）も設定済み。
+
+残っている事項:
 
 - **CSV が市の原本と違う 10 件**（`確認事項` に `原本と違う: …` が立っている）。
   内訳は、原本にある明らかな誤りを CSV 側で直したもの:
@@ -35,17 +38,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **市に確認したい住所が 2 件**（`data/shops.csv` のメモ欄に理由あり）。座標は手入力で解決済みだが、
   原本の番地が疑わしい: `ぐんじクリーニング` は `3295`（Google は `329-5`）、
   `薬王堂栃木都賀店` は `1870番1`（Google は `1881`）。
-- **API キーの制限が未設定**。公開前に必ず: ウェブサイト制限 `https://www.ngmix.com/*`
-  （**パスを含めない**）、API の制限を Maps JavaScript API のみ、割り当て上限と予算アラート。
-- **スマートフォン実機での確認が途中**。LAN 経由（`http://192.168.1.101:3000/tochisuke/`）で
-  一部は表示できたが、エラーも出ている。原因は未特定のまま保留。前提は 2 つ:
-  - WSL2 は NAT の中にいるため、Windows 側に portproxy と受信規則が要る
-    （`netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0
-    connectport=3000 connectaddress=<WSL の IP>`。要管理者。WSL 再起動で IP が変わる）。
-    `next.config.ts` の `allowedDevOrigins` には LAN の IP を入れてある。
-  - **`http://` の LAN IP では位置情報 API が使えない**（HTTPS か localhost が必須）。
-    「近い順」はここでは動かない。実機で試すならトンネル等で HTTPS にする必要がある。
-    地図が出ない場合は API キーのリファラー制限も疑うこと。
+
+**スマートフォン実機を LAN 経由で見る件は見送った**（本番の HTTPS で確認できるため）。
+再開するなら前提は 2 つ:
+
+- WSL2 は NAT の中にいるため、Windows 側に portproxy と受信規則が要る
+  （`netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0
+  connectport=3000 connectaddress=<WSL の IP>`。要管理者。WSL 再起動で IP が変わる）。
+  `next.config.ts` の `allowedDevOrigins` には LAN の IP を入れてある。
+- **`http://` の LAN IP では位置情報 API が使えない**（HTTPS か localhost が必須）。
+  「近い順」はここでは動かない。実機で試すならトンネル等で HTTPS にする必要がある。
 
 実装と食い違いを見つけたら、コードに合わせてこのファイルを直す（逆はしない）。
 
