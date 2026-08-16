@@ -11,6 +11,7 @@
     "format": "biome check --write .",
     "test": "bun test",
     "import:excel": "bun run scripts/import-excel.ts",
+    "import:csv": "bun run scripts/import-csv.ts",
     "geocode": "bun run scripts/geocode.ts"
   },
   "dependencies": {

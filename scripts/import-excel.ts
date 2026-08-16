@@ -1,32 +1,33 @@
 #!/usr/bin/env bun
 /**
- * 市から届く Excel を読み、`public/shops.json` を生成する。
+ * 市から届く Excel を読み、人が編集する `data/shops.csv` を作る（そこから JSON も作る）。
  *
  *   bun run import:excel -- data/raw/2026-08-14-加盟店一覧.xlsx
  *
+ *   Excel（原本・触らない）─┐
+ *                          ├─▶ data/shops.csv ─▶ public/shops.json
+ *              人の手直し ─┘
+ *
  * 方針:
+ * - **原本の Excel は加工しない。** `data/raw/` に受領時のまま置く。
+ *   住所の誤りや閉店・新規開店の反映は CSV 側で行う。
  * - 列は **位置ではなくヘッダー名で解決**する。見つからなければ失敗させる。
  *   取り込みの静かな失敗（列ずれに気付かず変なデータが入る）が最悪の結果になるため。
+ * - **すでに CSV があれば、人が直した値を残したまま Excel の更新を取り込む**（`scripts/merge.ts`）。
+ *   前回の Excel を `data/excel-baseline.json` に控えてあり、それと突き合わせて
+ *   「人が直した列」と「Excel 側で変わった列」を見分ける。
  * - 明らかな誤りを自動修正しない。**警告として出し、人が判断する。**
- *   次の版で直っている可能性があり、個別修正をコードに埋めると腐る。
- * - 冪等。同じ Excel を二度流せば同じ JSON が出る。
+ * - 冪等。同じ Excel を二度流せば同じ CSV が出る。
  */
 
 import { existsSync, readFileSync } from 'node:fs'
-import { mkdir, writeFile } from 'node:fs/promises'
-import { dirname, resolve } from 'node:path'
+import { basename, resolve } from 'node:path'
 import * as XLSX from 'xlsx'
-import { areaFromAddress } from '../src/lib/area'
-import { normalizeForDisplay, shopKey } from '../src/lib/normalize'
-import {
-  CATEGORY_LABELS,
-  type CategoryCode,
-  type ShopRecord,
-  type ShopsFile,
-} from '../src/lib/shop'
-
-/** 電話番号非公開を意味するダミー値。そのまま表示・発信可能にしてはいけない。 */
-const TEL_PLACEHOLDER = '000-0000-0000'
+import { normalizeForDisplay } from '../src/lib/normalize'
+import { type Baseline, type ExcelRow, readBaseline, writeBaseline } from './baseline'
+import { CSV_PATH, readShopCsv, writeShopCsv } from './csv'
+import { buildShops, printReport } from './import-csv'
+import { mergeShopRows } from './merge'
 
 /** 期待するヘッダー。表記ゆれに備えて正規化して突き合わせる。 */
 const COLUMNS = {
@@ -121,72 +122,39 @@ function findHeader(rows: string[][]): {
   )
 }
 
-/** `A.スーパー・コンビニ` を コードと表示名に割る。 */
-function parseCategory(raw: string, rowLabel: string): CategoryCode | null {
-  const match = raw.normalize('NFKC').match(/^([A-I])\s*[.．]\s*(.+)$/)
-  if (match === null) {
-    warn(`${rowLabel}: 業種を解釈できない: ${JSON.stringify(raw)}`)
-    return null
-  }
-  const code = match[1] as CategoryCode
-  const label = match[2]?.trim() ?? ''
-  const expected = CATEGORY_LABELS[code]
-  if (label !== expected) {
-    warn(
-      `${rowLabel}: 業種 ${code} の表示名が既知と異なる。` +
-        `Excel「${label}」/ コード上「${expected}」。` +
-        'src/lib/shop.ts の CATEGORY_LABELS を確認すること。',
-    )
-  }
-  return code
-}
+/** Excel の全行から、データ行だけを取り出す。 */
+function readExcelRows(rows: string[][]): { rows: ExcelRow[]; sourceLabel: string } {
+  const { rowIndex, columns } = findHeader(rows)
 
-/**
- * のぼり旗の色から大型店舗かどうかを判定する。
- *
- * 実データは `中小店舗/黄色・青色` と `大型店舗/青色` の 2 値のみ。
- * 想定外の値は握りつぶさず失敗させる（券種の誤判定は利用者の実害に直結する）。
- */
-function parseIsLarge(raw: string, rowLabel: string): boolean | null {
-  const value = raw.normalize('NFKC').replace(/\s+/g, '')
-  if (value.startsWith('大型店舗')) return true
-  if (value.startsWith('中小店舗')) return false
-  warn(
-    `${rowLabel}: のぼり旗の色を解釈できない: ${JSON.stringify(raw)}。この店は除外した。`,
-  )
-  return null
-}
+  // タイトル行から版のラベルを拾う（例: 栃木市とち介商品券取扱加盟店（R8.7.31時点））
+  const title = rows
+    .slice(0, rowIndex)
+    .flat()
+    .find((cell) => String(cell).includes('とち介商品券'))
+  const sourceLabel = String(title ?? '').match(/（([^）]*時点)）/)?.[1] ?? '不明'
 
-function parseTel(raw: string, rowLabel: string): string | null {
-  const value = raw.normalize('NFKC').trim()
-  if (value === '') return null
-  // 非公開を意味するダミー値。区切り位置が変わった版でも拾えるよう、
-  // 0 とハイフンだけで構成された値はすべて非公開として扱う。
-  if (value === TEL_PLACEHOLDER || /^[0-]+$/.test(value)) return null
-  if (!/^0\d{1,3}-\d{2,4}-\d{3,4}$/.test(value)) {
-    warn(`${rowLabel}: 電話番号の形が想定外: ${JSON.stringify(raw)}`)
+  const result: ExcelRow[] = []
+  for (let i = rowIndex + 1; i < rows.length; i++) {
+    const row = rows[i]
+    if (row === undefined) continue
+    const cell = (key: ColumnKey): string =>
+      normalizeForDisplay(String(row[columns[key]] ?? ''))
+
+    // 実データの判定は屋号の有無で行う。行数・使用範囲・No 列は信用しない。
+    // 末尾には No だけ入った行と、書式だけ残った完全な空行が数百行続く。
+    const name = cell('name')
+    if (name === '') continue
+
+    result.push({
+      name,
+      kana: cell('kana'),
+      address: cell('address'),
+      tel: cell('tel'),
+      category: cell('category'),
+      flag: cell('flag'),
+    })
   }
-  return value
-}
-
-/**
- * 1 店舗 1 行で書き出す。
- *
- * 全体を整形すると gzip 後で 3 割ほど太り、逆に全体を 1 行にすると
- * Excel 更新時の差分が読めなくなる。行単位なら git diff が
- * 「どの店が増えて、どの店が消えたか」をそのまま見せてくれる。
- */
-function serialize(file: ShopsFile): string {
-  const head = [
-    '{',
-    `  "sourceLabel": ${JSON.stringify(file.sourceLabel)},`,
-    `  "importedAt": ${JSON.stringify(file.importedAt)},`,
-    '  "shops": [',
-  ]
-  const body = file.shops.map(
-    (shop, i) => `    ${JSON.stringify(shop)}${i === file.shops.length - 1 ? '' : ','}`,
-  )
-  return `${[...head, ...body, '  ]', '}'].join('\n')}\n`
+  return { rows: result, sourceLabel }
 }
 
 async function main(): Promise<void> {
@@ -205,109 +173,58 @@ async function main(): Promise<void> {
     process.exit(1)
   }
 
-  const rows = readSheet(path)
-  const { rowIndex, columns } = findHeader(rows)
-
-  // タイトル行から版のラベルを拾う（例: 栃木市とち介商品券取扱加盟店（R8.7.31時点））
-  const title = rows
-    .slice(0, rowIndex)
-    .flat()
-    .find((cell) => String(cell).includes('とち介商品券'))
-  const sourceLabel = String(title ?? '').match(/（([^）]*時点)）/)?.[1] ?? '不明'
-
-  const shops: ShopRecord[] = []
-  const seen = new Map<string, number>()
-
-  for (let i = rowIndex + 1; i < rows.length; i++) {
-    const row = rows[i]
-    if (row === undefined) continue
-    const cell = (key: ColumnKey): string => String(row[columns[key]] ?? '')
-
-    // 実データの判定は屋号の有無で行う。行数・使用範囲・No 列は信用しない。
-    // 末尾には No だけ入った行と、書式だけ残った完全な空行が数百行続く。
-    const rawName = cell('name').trim()
-    if (rawName === '') continue
-
-    const rowLabel = `row ${i + 1}「${normalizeForDisplay(rawName)}」`
-
-    const category = parseCategory(cell('category'), rowLabel)
-    const isLarge = parseIsLarge(cell('flag'), rowLabel)
-    if (category === null || isLarge === null) continue
-
-    const name = normalizeForDisplay(rawName)
-    const kana = normalizeForDisplay(cell('kana'))
-    const address = normalizeForDisplay(cell('address'))
-
-    if (address === '') {
-      warn(`${rowLabel}: 住所が空。除外した。`)
-      continue
-    }
-    if (kana === '') {
-      warn(`${rowLabel}: フリガナが空。かな検索に当たらない。`)
-    }
-    if (!address.startsWith('栃木市')) {
-      warn(`${rowLabel}: 住所が「栃木市」で始まらない: ${JSON.stringify(address)}`)
-    }
-
-    const id = shopKey(name, address)
-    const duplicate = seen.get(id)
-    if (duplicate !== undefined) {
-      warn(
-        `${rowLabel}: row ${duplicate} と屋号・住所が同一。重複の可能性がある。両方とも残した。`,
-      )
-    } else {
-      seen.set(id, i + 1)
-    }
-
-    // id と検索インデックスはファイルに持たない（読み込み時に導出する）。
-    // 詳細は src/lib/shop.ts の ShopRecord を参照。
-    shops.push({
-      name,
-      kana,
-      address,
-      tel: parseTel(cell('tel'), rowLabel),
-      category,
-      area: areaFromAddress(address),
-      isLarge,
-      lat: null,
-      lng: null,
-    })
-  }
-
-  if (shops.length === 0) {
-    console.error('1 件も取り込めなかった。列の解決かシートの選択が誤っている。')
+  const { rows: excelRows, sourceLabel } = readExcelRows(readSheet(path))
+  if (excelRows.length === 0) {
+    console.error('1 件も読めなかった。列の解決かシートの選択が誤っている。')
     process.exit(1)
   }
 
-  // 並び順を固定して冪等にする（git diff で増減が読めるようにするため）。
-  // Excel の No. 順は五十音の通し番号で版ごとにずれるため、同一性キー順で並べる。
-  shops.sort((a, b) => {
-    const left = shopKey(a.name, a.address)
-    const right = shopKey(b.name, b.address)
-    return left < right ? -1 : left > right ? 1 : 0
-  })
+  const previous = await readBaseline()
+  const current = await readShopCsv()
+  const merge = mergeShopRows(excelRows, previous?.rows ?? null, current)
 
-  const output: ShopsFile = {
+  await writeShopCsv(merge.rows)
+  const baseline: Baseline = {
     sourceLabel,
     importedAt: new Date().toISOString().slice(0, 10),
-    shops,
+    source: basename(path),
+    rows: excelRows,
   }
+  await writeBaseline(baseline)
 
-  const outPath = resolve(import.meta.dir, '../public/shops.json')
-  await mkdir(dirname(outPath), { recursive: true })
-  await writeFile(outPath, serialize(output), 'utf8')
+  console.log(`Excel: ${excelRows.length} 件（${sourceLabel}）← ${basename(path)}`)
+  console.log(`CSV  : ${merge.rows.length} 件 → ${CSV_PATH}`)
 
-  const large = shops.filter((s) => s.isLarge).length
-  console.log(`取り込み: ${shops.length} 件（${sourceLabel}）`)
-  console.log(`  中小店舗（黄色・青色）: ${shops.length - large}`)
-  console.log(`  大型店舗（青色のみ）  : ${large}`)
-  console.log(`  電話番号なし          : ${shops.filter((s) => s.tel === null).length}`)
-  console.log(`出力: ${outPath}`)
+  const sections: [string, string[]][] = [
+    ['原本に新しく載ったので CSV に足した店', merge.added],
+    [
+      '前回の原本にあり、今回の原本から消えた店（CSV には残した。掲載終了か要確認）',
+      merge.cityRemoved,
+    ],
+    [
+      '人が CSV から消していて、原本にはまだある店（消したままにした）',
+      merge.humanDeleted,
+    ],
+    [
+      '**原本側で値が変わった列**（CSV は据え置き。取り込むかは人が決める）',
+      merge.cityChanged,
+    ],
+    ['CSV が原本と違うままの列（人の修正が残っている）', merge.standing],
+  ]
+  for (const [title, lines] of sections) {
+    if (lines.length === 0) continue
+    console.log(`\n${title} ${lines.length} 件:`)
+    for (const line of lines) console.log(`  - ${line}`)
+  }
 
   if (warnings.length > 0) {
-    console.log(`\n警告 ${warnings.length} 件（自動修正はしていない）:`)
+    console.log(`\nExcel の読み取りに関する警告 ${warnings.length} 件:`)
     for (const message of warnings) console.log(`  - ${message}`)
   }
+
+  // CSV ができたら、そのまま JSON まで作る（人が続けて 2 コマンド打たなくて済むように）。
+  // 原本との食い違いは buildShops が控えから計算して確認事項に出す。
+  printReport(await buildShops())
 }
 
 main().catch((error: unknown) => {

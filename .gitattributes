@@ -1,0 +1,6 @@
+# data/shops.csv は Excel で開いて編集する前提のファイル。
+# BOM 付き UTF-8 + CRLF で書き出しているが、この環境の core.autocrlf=input は
+# コミット時に CRLF を LF へ潰す。そのまま取り込むと、clone し直した人の手元では
+# LF のファイルになり、意図した形（Excel が素直に開ける形）が保てない。
+# 取り出すときも CRLF になるよう明示する。
+data/shops.csv text eol=crlf

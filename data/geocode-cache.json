@@ -776,6 +776,13 @@
     "formatted": "日本、〒328-0007 栃木県栃木市大塚町５２１",
     "partialMatch": false
   },
+  "栃木市大塚町521-5": {
+    "lat": 36.4025968,
+    "lng": 139.7656022,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町５２１−５",
+    "partialMatch": false
+  },
   "栃木市大塚町786": {
     "lat": 36.407076,
     "lng": 139.7725265,
@@ -3723,6 +3730,13 @@
     "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０１３",
     "partialMatch": false
   },
+  "栃木市藤岡町藤岡1015-5": {
+    "lat": 36.26306659999999,
+    "lng": 139.6497388,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒323-1104 栃木県栃木市藤岡町藤岡１０１５−５",
+    "partialMatch": false
+  },
   "栃木市藤岡町藤岡1021": {
     "lat": 36.2624314,
     "lng": 139.6494064,
@@ -4582,6 +4596,13 @@
     "lng": 139.7288247,
     "locationType": "ROOFTOP",
     "formatted": "日本、〒328-0017 栃木県栃木市錦町７−７",
+    "partialMatch": false
+  },
+  "栃木県栃木市大塚町521-5": {
+    "lat": 36.4025968,
+    "lng": 139.7656022,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0007 栃木県栃木市大塚町５２１−５",
     "partialMatch": false
   }
 }
