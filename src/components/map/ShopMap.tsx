@@ -9,11 +9,43 @@ import { CATEGORY_LABELS, type Shop } from '@/lib/shop'
 /** 栃木市役所付近。座標が 1 件も無いときの初期表示に使う。 */
 const TOCHIGI_CITY_CENTER = { lat: 36.3826, lng: 139.7333 }
 
+/**
+ * ピンの色。**券種と対応させる**（既定の赤のままでは、地図から券種が読み取れない）。
+ *
+ * 店頭ののぼり旗の色、カードのバッジの色と揃えてある。
+ * 黄と青は色覚特性のある人にも見分けやすい組み合わせで、この用途に都合がよい。
+ * 地図の上に載るので、暗い配色に切り替わっても読めるよう固定値にする。
+ */
+const PIN_COLORS = {
+  /** 中小店舗。黄色券・青色券の両方が使える。 */
+  small: { background: '#f2b200', borderColor: '#8a6400', glyphColor: '#6b4e00' },
+  /** 大型店舗。青色券のみ。 */
+  large: { background: '#1f6feb', borderColor: '#0f3d85', glyphColor: '#ffffff' },
+} as const
+
 type Props = {
   /** 絞り込み後の店舗。地図には常に絞り込み結果だけを描く。 */
   shops: Shop[]
   /** 現在地。取得していなければ null。 */
   origin: LatLng | null
+}
+
+/**
+ * クラスタの見た目。
+ *
+ * **既定の描画は件数に応じて青→赤に変わる。** 券種の色分けと混ざって読めなくなるので
+ * （黄色券だけに絞ったのに赤い丸が並ぶ）、中身の券種で塗り分ける。
+ * 混在しているクラスタは、どちらの色でもない灰色にする。
+ */
+function clusterContent(count: number, kind: 'small' | 'large' | 'mixed'): HTMLElement {
+  const element = document.createElement('div')
+  element.className = `map-cluster map-cluster-${kind}`
+  element.textContent = String(count)
+  // 件数が多いほど大きく。密度の手掛かりになり、桁が増えても文字が収まる。
+  const size = count < 10 ? 34 : count < 100 ? 42 : 50
+  element.style.width = `${size}px`
+  element.style.height = `${size}px`
+  return element
 }
 
 export function ShopMap({ shops, origin }: Props) {
@@ -65,29 +97,61 @@ export function ShopMap({ shops, origin }: Props) {
         const map = mapRef.current
         const info = infoRef.current
 
+        // クラスタを塗り分けるために、マーカーから券種を引けるようにしておく。
+        const isLargeOf = new WeakMap<object, boolean>()
+
         const markers = plottable.map((shop) => {
+          const pin = new maps.PinElement(
+            shop.isLarge ? PIN_COLORS.large : PIN_COLORS.small,
+          )
           const marker = new maps.AdvancedMarkerElement({
             position: { lat: shop.lat, lng: shop.lng },
             title: shop.name,
+            // PinElement 自体が要素。`pin.element` は非推奨（警告が出る）。
+            content: pin,
           })
           // AdvancedMarkerElement では 'click' は非推奨で 'gmp-click' を使う。
           marker.addListener('gmp-click', () => {
+            // 電話番号が非公開（Excel 上は 000-0000-0000）の店では行ごと出さない。
+            // 出すときは発信できるようにする。地図から直接かけられるのが自然。
+            const tel =
+              shop.tel === null
+                ? ''
+                : `<a href="tel:${escapeHtml(shop.tel)}">${escapeHtml(shop.tel)}</a><br>`
             info?.setContent(
               `<div style="font-size:13px;line-height:1.5">
                  <strong>${escapeHtml(shop.name)}</strong><br>
                  ${escapeHtml(shop.address)}<br>
+                 ${tel}
                  ${shop.isLarge ? '青色券のみ' : '黄色券・青色券'}
                  / ${escapeHtml(CATEGORY_LABELS[shop.category])}
                </div>`,
             )
             info?.open({ map, anchor: marker })
           })
+          isLargeOf.set(marker, shop.isLarge)
           return marker
         })
 
         // 655 件を素で並べると市全域のズームで密集して読めない。
         clustererRef.current?.clearMarkers()
-        clustererRef.current = new MarkerClusterer({ map, markers })
+        clustererRef.current = new MarkerClusterer({
+          map,
+          markers,
+          renderer: {
+            render: ({ count, position, markers: inCluster }) => {
+              const kinds = new Set(
+                (inCluster ?? []).map((member) => isLargeOf.get(member) === true),
+              )
+              const kind = kinds.size > 1 ? 'mixed' : kinds.has(true) ? 'large' : 'small'
+              return new maps.AdvancedMarkerElement({
+                position,
+                content: clusterContent(count, kind),
+                title: `${count} 件`,
+              })
+            },
+          },
+        })
 
         // 絞り込み結果が収まる範囲に寄せる。1 件だけのときは寄りすぎないようにする。
         if (markers.length > 0) {
@@ -156,7 +220,20 @@ export function ShopMap({ shops, origin }: Props) {
 
   return (
     <>
+      {/*
+        色に意味がある以上、凡例が要る。ピンの色だけでは券種と結び付かない。
+        **地図より上に置く。** 地図は画面高の 7 割を占めるので、下に置くと
+        スクロールしないと見えず、凡例の用をなさない。
+      */}
+      <p className="map-legend">
+        <span className="legend-pin legend-pin-small" aria-hidden="true" />
+        黄色券・青色券
+        <span className="legend-pin legend-pin-large" aria-hidden="true" />
+        青色券のみ
+      </p>
+
       <div ref={containerRef} className="map" />
+
       {plottable.length < shops.length && (
         <p className="map-note">
           {shops.length - plottable.length}{' '}

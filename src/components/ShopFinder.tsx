@@ -37,6 +37,9 @@ type LoadState =
  */
 const PAGE_SIZE = 50
 
+/** 読み込み中の置き換え。毎回 `[]` を作ると、そのたびに絞り込みが走り直す。 */
+const EMPTY_SHOPS: Shop[] = []
+
 export function ShopFinder() {
   const [state, setState] = useState<LoadState>({ status: 'loading' })
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
@@ -72,18 +75,36 @@ export function ShopFinder() {
     if (position.state.status === 'error') setOrder('default')
   }, [position.state.status])
 
-  const shops = state.status === 'ready' ? state.shops : []
+  const shops = state.status === 'ready' ? state.shops : EMPTY_SHOPS
   // 655 件の総当たりで体感遅延は無いが、タブ切り替えや再描画のたびに
   // 走らせる必要はないので条件が変わったときだけ計算する。
   const results = useMemo(() => {
     return sortShops(filterShops(shops, filters), order, origin)
   }, [shops, filters, order, origin])
 
+  /**
+   * 表示件数を先頭に戻す条件を、1 本の文字列にまとめたもの。
+   *
+   * **配列やオブジェクトの同一性で比べてはいけない。** 開発時の StrictMode は描画を
+   * 二度走らせ、そのとき `useMemo` の結果が作り直される。同一性で比べると毎回
+   * 「変わった」と見なされ、描画中の更新が止まらずに落ちる（Too many re-renders）。
+   */
+  const resetKey = [
+    filters.query,
+    filters.yellowOnly,
+    filters.categories.join(','),
+    filters.areas.join(','),
+    order,
+    origin?.lat,
+    origin?.lng,
+    shops.length,
+  ].join('|')
+
   // 条件や並び順が変わったら先頭から見せる。前の続きから始まると読み飛ばしになる。
   // effect ではなく描画中に直す（effect にすると一瞬だけ前の枚数で描かれる）。
-  const [shownFor, setShownFor] = useState(results)
-  if (shownFor !== results) {
-    setShownFor(results)
+  const [shownFor, setShownFor] = useState(resetKey)
+  if (shownFor !== resetKey) {
+    setShownFor(resetKey)
     setShown(PAGE_SIZE)
   }
 
@@ -96,9 +117,12 @@ export function ShopFinder() {
   return (
     <div className="page">
       <header className="header">
+        {/* 版のラベルは同じ行の右端に置く。1 行を丸ごと使うほどの情報ではない。 */}
         <h1 className="title">
-          とち介商品券 加盟店さがし
-          {state.status === 'ready' && <span>{state.sourceLabel}</span>}
+          <span className="title-name">とち介商品券2026 マップ</span>
+          {state.status === 'ready' && (
+            <span className="title-version">{state.sourceLabel}</span>
+          )}
         </h1>
 
         <FilterBar

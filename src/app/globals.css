@@ -71,13 +71,18 @@ body {
 }
 
 .title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
   font-weight: 700;
 }
 
-.title span {
-  display: block;
+/* 版のラベル（例: R8.7.31時点）。同じ行の右端に置き、縦を 1 行分取り戻す。 */
+.title-version {
+  flex: 0 0 auto;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--text-muted);
@@ -147,6 +152,22 @@ body {
 
 .chips-scroll::-webkit-scrollbar {
   display: none;
+}
+
+/*
+  **横スクロールは指で払える端末に限る。**
+  マウスでは水平スクロールバーが出ず、ホイールも縦にしか効かないため、
+  右端のチップが見切れたまま触れなくなる（PC で実際に踏んだ）。
+  画面に幅があるとき、またはマウス環境では折り返して全部見せる。
+  業種・地区は既定で畳んであるので、開いたときに縦を使っても一覧を圧迫し続けない。
+*/
+@media (min-width: 560px), (pointer: fine) {
+  .chips-scroll {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding: 0;
+    margin-inline: 0;
+  }
 }
 
 .chip {
@@ -449,6 +470,67 @@ body {
   margin: 0 1rem 1rem;
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+/* ピンの色の凡例。色と券種の対応が分からないと、色分けの意味が無い。 */
+.map-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.1rem 1rem 0.35rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.legend-pin {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  /* 2 つ目以降の凡例は前の項目から少し離す */
+  margin-left: 0.6rem;
+}
+
+.legend-pin:first-child {
+  margin-left: 0;
+}
+
+/* ピンと同じ色。ShopMap.tsx の PIN_COLORS と揃える。 */
+.legend-pin-small {
+  background: #f2b200;
+  border: 1px solid #8a6400;
+}
+
+.legend-pin-large {
+  background: #1f6feb;
+  border: 1px solid #0f3d85;
+}
+
+/* クラスタ。中身の券種で塗り分ける（ピンと同じ色。混在は灰色）。 */
+.map-cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 2px solid rgb(255 255 255 / 85%);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+}
+
+.map-cluster-small {
+  color: #4a3400;
+  background: #f2b200;
+}
+
+.map-cluster-large {
+  color: #ffffff;
+  background: #1f6feb;
+}
+
+/* 中小店舗と大型店舗が混ざっているクラスタ。どちらの色でもないことを示す。 */
+.map-cluster-mixed {
+  color: #ffffff;
+  background: #5c6470;
 }
 
 /* 現在地のマーカー。店舗のピンと混ざらないよう、点で描く。 */

@@ -21,6 +21,8 @@ export type MapsApi = {
   InfoWindow: typeof google.maps.InfoWindow
   LatLngBounds: typeof google.maps.LatLngBounds
   AdvancedMarkerElement: typeof google.maps.marker.AdvancedMarkerElement
+  /** ピンの色を変えるために使う。既定の赤のままでは券種が読み取れない。 */
+  PinElement: typeof google.maps.marker.PinElement
 }
 
 let loading: Promise<MapsApi> | null = null
@@ -97,7 +99,11 @@ export function loadGoogleMaps(): Promise<MapsApi> {
       await injectScript(key)
     }
     const maps = window.google?.maps
-    if (maps?.Map === undefined || maps.marker?.AdvancedMarkerElement === undefined) {
+    if (
+      maps?.Map === undefined ||
+      maps.marker?.AdvancedMarkerElement === undefined ||
+      maps.marker?.PinElement === undefined
+    ) {
       throw new Error('Google Maps を読み込めませんでした。')
     }
 
@@ -106,6 +112,7 @@ export function loadGoogleMaps(): Promise<MapsApi> {
       InfoWindow: maps.InfoWindow,
       LatLngBounds: maps.LatLngBounds,
       AdvancedMarkerElement: maps.marker.AdvancedMarkerElement,
+      PinElement: maps.marker.PinElement,
     }
   })().catch((error: unknown) => {
     // 次に開いたときに再試行できるよう、失敗した Promise を残さない。

@@ -2,16 +2,17 @@ import { formatDistance } from '@/lib/geo'
 import { AREA_LABELS, CATEGORY_LABELS, type Shop } from '@/lib/shop'
 
 /**
- * 住所から Google マップを開くリンク。
+ * Google マップを開くリンク。
  *
- * 座標が無くても住所だけで開ける。スマートフォンでは Google マップアプリが
- * 起動し、そのまま経路案内に繋がるため、地図タブとは別に常に用意しておく。
+ * **座標ではなく店名と住所を渡す。** 座標を渡すと Google マップは「その地点」として
+ * 開き、店名ではなく緯度経度が見出しに出る。店名で開けば店の情報（営業時間・写真・
+ * 経路）にそのまま繋がる。住所を添えるのは、同じ屋号の別の店に飛ばないようにするため。
+ *
+ * スマートフォンでは Google マップアプリが起動し、そのまま経路案内に繋がるので、
+ * アプリ内の地図タブとは別に常に用意しておく。
  */
 function mapsUrl(shop: Shop): string {
-  const query =
-    shop.lat !== null && shop.lng !== null
-      ? `${shop.lat},${shop.lng}`
-      : `${shop.name} ${shop.address}`
+  const query = `${shop.name} ${shop.address}`
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
 }
 

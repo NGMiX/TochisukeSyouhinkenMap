@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'とち介商品券 加盟店さがし',
+  title: 'とち介商品券2026 マップ',
   description:
     '栃木市のとち介商品券が使えるお店を、店名・住所・業種から探せます。黄色券が使えるお店だけに絞り込めます。',
 }

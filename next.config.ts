@@ -26,6 +26,15 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
 
   env: { NEXT_PUBLIC_BASE_PATH: basePath },
+
+  /**
+   * 開発サーバーを LAN の IP で開くときに許可するホスト（**開発時のみ効く設定**）。
+   *
+   * スマートフォン実機で確認したいことがある。指定が無いと Next.js が
+   * `_next/*` への別オリジンからの要求を警告し、将来の版では拒否する。
+   * 本番の静的出力には一切影響しない。
+   */
+  allowedDevOrigins: ['192.168.1.101'],
 }
 
 export default nextConfig
