@@ -311,6 +311,15 @@ body {
   border-bottom-color: var(--accent);
 }
 
+/*
+  地図の入れ物。リストタブのときは `hidden` で隠すだけで、**地図は作り直さない**
+  （位置と倍率を保つため、そして map load の課金を増やさないため）。
+  将来ここに display を持つ指定を足すと `hidden` が効かなくなるので、明示的に消す。
+*/
+.map-panel[hidden] {
+  display: none;
+}
+
 /* ---- 件数表示 ---- */
 
 .count {

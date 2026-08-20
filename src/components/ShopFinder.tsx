@@ -55,6 +55,14 @@ export function ShopFinder() {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
   const [order, setOrder] = useState<SortOrder>('default')
   const [tab, setTab] = useState<Tab>('list')
+  /**
+   * 地図タブを一度でも開いたか。
+   *
+   * **遅延ロードは崩さない。** 開くまで地図のチャンクも Maps API も読み込まない
+   * （課金対象の map load もそこで初めて発生する）。一度開いた後は
+   * タブを戻しても `hidden` にするだけで、地図そのものは作り直さない。
+   */
+  const [mapOpened, setMapOpened] = useState(false)
   const [detailsOpen, setDetailsOpen] = useState(false)
   const [shown, setShown] = useState(PAGE_SIZE)
   const position = useCurrentPosition()
@@ -160,7 +168,10 @@ export function ShopFinder() {
             role="tab"
             className="tab"
             aria-selected={tab === 'map'}
-            onClick={() => setTab('map')}
+            onClick={() => {
+              setTab('map')
+              setMapOpened(true)
+            }}
           >
             地図
           </button>
@@ -226,12 +237,20 @@ export function ShopFinder() {
               </>
             ))}
 
-          {tab === 'map' &&
-            (results.length === 0 ? (
-              <p className="notice">条件に合うお店がありません。</p>
-            ) : (
+          {/*
+            **地図は一度開いたら外さない。** アンマウントすると `google.maps.Map` が捨てられ、
+            戻ったときに作り直しになる。利用者が見ていた位置と倍率が失われる上、
+            **課金対象の map load がタブを開くたびに発生する**。
+            0 件のときも同じ理由で残し、通知だけを上に出す（条件を戻せばピンが戻る）。
+          */}
+          {mapOpened && (
+            <div className="map-panel" hidden={tab !== 'map'}>
+              {results.length === 0 && (
+                <p className="notice">条件に合うお店がありません。</p>
+              )}
               <ShopMap shops={results} origin={origin} />
-            ))}
+            </div>
+          )}
         </>
       )}
     </div>
