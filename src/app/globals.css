@@ -14,6 +14,14 @@
   --ticket-yellow: #e8a600;
   --ticket-blue: #1f6feb;
 
+  /*
+    ヘッダーの帯（タブより上）。**券の黄色とは役割が違う**ので、彩度を落とし
+    明度を上げて「地」に見える範囲に留める。ここが濃いと、同じ暖色の
+    「黄色券」チップが帯に埋もれて券種の色分けが読めなくなる。
+  */
+  --header-bg: #fff3e6;
+  --header-line: #f2dcc2;
+
   --radius: 10px;
   --tap-target: 44px;
 }
@@ -29,6 +37,11 @@
     --accent-contrast: #0b1116;
     --ticket-yellow: #f0b429;
     --ticket-blue: #58a6ff;
+
+    /* 暗い配色では明るいオレンジが眩しいので、暖色に寄せた暗い色にする。
+       本文の背景（--bg）より明るくして、帯が浮いて見える側に置く。 */
+    --header-bg: #2a2016;
+    --header-line: #3d2f1f;
   }
 }
 
@@ -61,11 +74,16 @@ body {
 
 /* ---- ヘッダー（検索と絞り込み。スクロールしても残す） ---- */
 
+/*
+  **タブより上だけをオレンジの帯にする。** 帯（絞り込み）→ 白いタブ行 → 一覧、の 3 層にして
+  「探す道具」と「結果」を見分けやすくする。タブまで塗ると帯と一覧の境目がタブと重なり、
+  どこからが結果なのかが読み取りにくい。
+*/
 .header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--surface);
+  background: var(--header-bg);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 1rem 0;
 }
@@ -100,7 +118,8 @@ body {
   padding: 0 var(--tap-target) 0 0.75rem;
   font-size: 1rem; /* 16px 未満だと iOS でフォーカス時に拡大される */
   color: var(--text);
-  background: var(--bg);
+  /* 帯の上では --bg のグレーが濁って見える。白にして「窪み」に見せる。 */
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
@@ -175,7 +194,8 @@ body {
   padding: 0.25rem 0.7rem;
   font-size: 0.85rem;
   color: var(--text);
-  background: var(--bg);
+  /* 検索窓と同じ理由で白。押されたチップ（accent 塗り）との差も付く。 */
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 999px;
   cursor: pointer;
@@ -260,10 +280,18 @@ body {
 
 /* ---- タブ ---- */
 
+/*
+  帯の下に敷く白い行。**左右の負のマージンでヘッダーの端まで伸ばす**
+  （ヘッダーの左右 padding が 1rem なので -1rem）。`margin-inline` ではなく
+  長い形で書くのは、`.chips-scroll` と違ってここは古い端末でも帯と分かれて見えてほしいため。
+*/
 .tabs {
   display: flex;
   gap: 0.25rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem -1rem 0;
+  padding: 0 1rem;
+  background: var(--surface);
+  border-top: 1px solid var(--header-line);
 }
 
 .tab {
