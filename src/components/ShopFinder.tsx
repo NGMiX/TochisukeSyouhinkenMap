@@ -40,6 +40,16 @@ const PAGE_SIZE = 50
 /** 読み込み中の置き換え。毎回 `[]` を作ると、そのたびに絞り込みが走り直す。 */
 const EMPTY_SHOPS: Shop[] = []
 
+/**
+ * アプリが動き出した印。**`src/app/layout.tsx` の見張りがこれを見る。**
+ *
+ * 古すぎるブラウザではチャンクがパースできず、この行に到達しない。印が無ければ
+ * 「読み込み中…」を非対応の知らせに差し替える。消すと古い端末で画面が固まったままになる。
+ */
+if (typeof window !== 'undefined') {
+  ;(window as unknown as Record<string, unknown>).__tochisukeAlive = true
+}
+
 export function ShopFinder() {
   const [state, setState] = useState<LoadState>({ status: 'loading' })
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
@@ -157,7 +167,12 @@ export function ShopFinder() {
         </div>
       </header>
 
-      {state.status === 'loading' && <p className="notice">読み込み中…</p>}
+      {/* id は layout.tsx の見張りが掴む。外すと古い端末に理由が出なくなる。 */}
+      {state.status === 'loading' && (
+        <p className="notice" id="boot-notice">
+          読み込み中…
+        </p>
+      )}
 
       {state.status === 'error' && (
         <p className="notice notice-error">

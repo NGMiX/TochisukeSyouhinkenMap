@@ -43,6 +43,16 @@ export const MAP_ID = mapId()
 const CALLBACK_NAME = '__tochisukeInitGoogleMaps'
 
 /**
+ * 待つのをやめる時間。
+ *
+ * **`script.onerror` では足りない。** onerror が発火するのは取得に失敗したときだけで、
+ * 取得できたスクリプトが**古いエンジンで構文エラーになった場合は発火しない**。
+ * Maps が対応していない端末（Google のサポートは iOS の最新と 1 つ前のメジャーのみ）では
+ * `callback` も onerror も来ないため、待ち続けると「地図を読み込み中…」のまま固まる。
+ */
+const LOAD_TIMEOUT_MS = 15000
+
+/**
  * スクリプトを読み込み、API が使える状態になるまで待つ。
  *
  * **`script.onload` では足りない。** `loading=async` を付けた場合、onload の時点では
@@ -52,7 +62,19 @@ const CALLBACK_NAME = '__tochisukeInitGoogleMaps'
 function injectScript(key: string): Promise<void> {
   return new Promise((resolve, reject) => {
     const globals = window as unknown as Record<string, unknown>
+
+    const timer = setTimeout(() => {
+      delete globals[CALLBACK_NAME]
+      reject(
+        new Error(
+          '地図を表示できませんでした。通信状況を確認してください。' +
+            'お使いの端末が古い場合、地図には対応していません（一覧は使えます）。',
+        ),
+      )
+    }, LOAD_TIMEOUT_MS)
+
     globals[CALLBACK_NAME] = () => {
+      clearTimeout(timer)
       delete globals[CALLBACK_NAME]
       resolve()
     }
@@ -70,6 +92,7 @@ function injectScript(key: string): Promise<void> {
     script.src = `https://maps.googleapis.com/maps/api/js?${params}`
     script.async = true
     script.onerror = () => {
+      clearTimeout(timer)
       delete globals[CALLBACK_NAME]
       reject(
         new Error(
