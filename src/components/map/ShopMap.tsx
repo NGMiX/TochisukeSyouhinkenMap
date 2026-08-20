@@ -23,6 +23,14 @@ const PIN_COLORS = {
   large: { background: '#1f6feb', borderColor: '#0f3d85', glyphColor: '#ffffff' },
 } as const
 
+/**
+ * この件数以下に絞られたら、結果に寄せる。
+ *
+ * 「特定の店を狙っている」と見なせる境目。ここを大きくすると、業種や券種で絞るたびに
+ * 地図が市全域へ寄り直して、利用者が拡大した表示を奪うことになる。
+ */
+const FIT_THRESHOLD = 5
+
 type Props = {
   /** 絞り込み後の店舗。地図には常に絞り込み結果だけを描く。 */
   shops: Shop[]
@@ -154,13 +162,34 @@ export function ShopMap({ shops, origin }: Props) {
           },
         })
 
-        // 絞り込み結果が収まる範囲に寄せる。1 件だけのときは寄りすぎないようにする。
-        if (markers.length > 0) {
+        /*
+          寄せ方。**利用者が見ている場所を勝手に戻さない。**
+
+          絞り込みが変わるたびに結果全体へ寄せ直すと、ある店に絞り込んで見ていた人が
+          条件を消した瞬間に市全域へ戻され、見ていた場所を失う（実際に指摘を受けた）。
+          かといって寄せるのをやめると、店名で検索してもその店に寄らなくなる
+          （初期表示が全件を含むため「見えているから動かない」が常に成立してしまう）。
+
+          寄せるのは次の 2 つだけ。**増えたときは動かさない**のが要点。
+
+          - **数件に絞られたとき** — 特定の店を狙っていると見なせる。寄せる方が親切
+          - **いまの表示に 1 件も出ていないとき** — 何も無い地図を見せることになる。
+            初回は `getBounds()` がまだ無いのでここに入り、全件に寄る（従来の初期表示）
+
+          条件を消して件数が増える場合はどちらにも当たらないので、表示はそのまま残る。
+        */
+        const shown = map.getBounds()
+        const anyVisible =
+          shown !== undefined &&
+          plottable.some((shop) => shown.contains({ lat: shop.lat, lng: shop.lng }))
+
+        if (markers.length > 0 && (markers.length <= FIT_THRESHOLD || !anyVisible)) {
           const bounds = new maps.LatLngBounds()
           for (const shop of plottable) {
             bounds.extend({ lat: shop.lat, lng: shop.lng })
           }
           map.fitBounds(bounds, 32)
+          // 1 件だけのときは fitBounds が寄りすぎるので抑える。
           if (markers.length === 1) map.setZoom(16)
         }
       })
