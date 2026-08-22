@@ -10,6 +10,8 @@
  * - 人が見て問題なしと判断したら `済` と書く。
  * - **`済` は「その時点の確認事項を見て判断した」という意味**。状況が変われば `要確認` に戻す。
  *   戻さないと、住所を直して座標がずれた行が `済` のまま埋もれる。
+ *   ただし**確認事項が全部消えて座標も動いていないなら、見るべきものが無いので印は下ろす**
+ *   （市が原本の誤りを直したときに、確認済みの行が理由なしに積み上がるのを防ぐ）。
  *
  * 人が自分で `要確認` と書いた行（機械が挙げた理由が無い行）は、機械が消さない。
  */
@@ -81,6 +83,17 @@ export function updateReview(input: ReviewInput): { check: string; issues: strin
     if (sameIssues(stored, input.issues) && !input.coordChanged) {
       return { check: CHECK_DONE, issues: join(input.issues) }
     }
+    /*
+      **確認事項が全部消え、座標も動いていないなら印を下ろす。**
+
+      市が原本の誤りを直すと `原本と違う: …` が消える。これを「変化」として
+      `要確認` に戻すと、**市が直すたびに、こちらで確認済みの行が理由なしに
+      積み上がる**（実際に 8 件出た）。見るべきものが無い行に印を付けると、
+      印そのものが読み飛ばされる。座標が動いた場合は下の枝で知らせる。
+    */
+    if (input.issues.length === 0 && !input.coordChanged) {
+      return { check: '', issues: '' }
+    }
     return { check: CHECK_TODO, issues: join([...input.issues, CHANGED_MARK]) }
   }
 
@@ -90,7 +103,19 @@ export function updateReview(input: ReviewInput): { check: string; issues: strin
     if (input.issues.length === 0 && stored.length > 0) {
       return { check: '', issues: '' }
     }
-    return { check: CHECK_TODO, issues: join(input.issues) }
+    /*
+      **変化の印は、人が `済` にするまで書き続ける。**
+
+      印は毎回書き直すので、ここで落とすと次の実行で理由が消え、
+      **`要確認` だけが理由なしに残る**（人には何を見ればよいか分からない）。
+      `parseIssues` はこの印を確認事項に数えないので、上の「理由が消えたら下ろす」
+      判定には影響しない。
+    */
+    const wasChanged = input.storedIssues.includes(CHANGED_MARK)
+    return {
+      check: CHECK_TODO,
+      issues: join(wasChanged ? [...input.issues, CHANGED_MARK] : input.issues),
+    }
   }
 
   if (check !== '') {

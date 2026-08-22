@@ -82,13 +82,43 @@ describe('updateReview', () => {
     expect(result.issues).toContain(CHANGED_MARK)
   })
 
-  test('済 で確認事項が全部消えても、変化として一度は知らせる', () => {
-    const result = review({
+  test('済 で確認事項が全部消え、座標も動いていなければ印を下ろす', () => {
+    // 市が原本の誤りを直すと `原本と違う: …` が消える。見るべきものが無いので
+    // 要確認 に戻さない（戻すと、市が直すたびに理由なしの印が積み上がる）。
+    expect(
+      review({
+        storedCheck: CHECK_DONE,
+        storedIssues: '原本と違う: 住所（原本は「栃木県栃木市万町31-19」）',
+        issues: [],
+      }),
+    ).toEqual({ check: '', issues: '' })
+  })
+
+  test('済 で確認事項が消えても、座標が動いたなら知らせる', () => {
+    expect(
+      review({
+        storedCheck: CHECK_DONE,
+        storedIssues: '店名で照合した座標',
+        issues: [],
+        coordChanged: true,
+      }),
+    ).toEqual({ check: CHECK_TODO, issues: CHANGED_MARK })
+  })
+
+  test('変化の印は、次に回しても消えない（理由なしの要確認を残さない）', () => {
+    const first = review({
       storedCheck: CHECK_DONE,
       storedIssues: '店名で照合した座標',
       issues: [],
+      coordChanged: true,
     })
-    expect(result).toEqual({ check: CHECK_TODO, issues: CHANGED_MARK })
+    // 座標はもう動かないが、人がまだ見ていない状態でもう一度回す
+    const second = review({
+      storedCheck: CHECK_TODO,
+      storedIssues: first.issues,
+      issues: [],
+    })
+    expect(second).toEqual({ check: CHECK_TODO, issues: CHANGED_MARK })
   })
 
   test('その要確認を人が済にしたら、次回は落ち着く（何度も蒸し返さない）', () => {
@@ -96,6 +126,7 @@ describe('updateReview', () => {
       storedCheck: CHECK_DONE,
       storedIssues: '店名で照合した座標',
       issues: [],
+      coordChanged: true,
     })
     // 人が改めて 済 と書いた状態で、もう一度回す
     const second = review({
