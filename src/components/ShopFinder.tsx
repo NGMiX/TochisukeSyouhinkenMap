@@ -137,7 +137,7 @@ export function ShopFinder() {
       <header className="header">
         {/* 版のラベルは同じ行の右端に置く。1 行を丸ごと使うほどの情報ではない。 */}
         <h1 className="title">
-          <span className="title-name">とち介商品券2026 マップ</span>
+          <span className="title-name">とち介商品券マップ</span>
           {state.status === 'ready' && (
             <span className="title-version">{state.sourceLabel}</span>
           )}

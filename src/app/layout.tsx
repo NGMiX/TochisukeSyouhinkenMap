@@ -1,10 +1,51 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
+/**
+ * 公開 URL。OG 画像などの相対パスはここを基準に絶対 URL へ展開される。
+ * 末尾のスラッシュを外すと `og.png` が `/og.png`（サイト直下）に化けるので消さないこと。
+ */
+const SITE_URL = 'https://www.ngmix.com/tochisuke/'
+
+/** 検索結果と SNS カードの両方で使う短い説明。 */
+const SUMMARY =
+  '栃木市の「とち介商品券2026」が使えるお店を、店名・住所・業種から検索できます。地図でも探せます。'
+
+/**
+ * 検索エンジン向けの情報。
+ *
+ * **`keywords` は入れない。** Google は 2009 年に順位の要素として使わないと明言しており、
+ * Bing も同様。入れても効かず、文言が古びるだけになる。
+ * 効くのは `title` と本文なので、実際に使われている検索語をそこに入れる。
+ *
+ * **狙う語**: 「とち介商品券 どこで使える」（実際にこの語で流入していた実績がある）、
+ * 「とちすけ商品券」（かな表記のゆれ）、「栃木市 商品券」「とち介商品券2026」。
+ *
+ * **`canonical` を明示する。** `/tochisuke` と `/tochisuke/` のように末尾スラッシュの
+ * 有無で別 URL と見なされるのを防ぐ。
+ */
 export const metadata: Metadata = {
-  title: 'とち介商品券2026 マップ',
+  metadataBase: new URL(SITE_URL),
+  title: 'とち介商品券マップ｜栃木市の加盟店はどこで使える？',
   description:
-    '栃木市のとち介商品券が使えるお店を、店名・住所・業種から探せます。黄色券が使えるお店だけに絞り込めます。',
+    '栃木市の「とち介商品券2026」がどこで使えるかを調べられる加盟店マップ。とちすけ商品券（栃木市商品券）の取扱店を店名・住所・業種で検索し、地図でも確認できます。黄色券が使えるお店だけに絞り込み、現在地から近い順にも並べ替えられます。',
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    type: 'website',
+    locale: 'ja_JP',
+    url: SITE_URL,
+    siteName: 'とち介商品券マップ',
+    title: 'とち介商品券マップ｜栃木市の加盟店はどこで使える？',
+    description: SUMMARY,
+    // metadataBase からの相対。先頭に / を付けるとサイト直下を指してしまう。
+    images: [{ url: 'og.png', width: 1200, height: 630, alt: 'とち介商品券マップ' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'とち介商品券マップ｜栃木市の加盟店はどこで使える？',
+    description: SUMMARY,
+    images: ['og.png'],
+  },
 }
 
 export const viewport: Viewport = {
