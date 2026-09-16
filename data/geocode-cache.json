@@ -3177,6 +3177,13 @@
     "formatted": "日本、〒328-0014 栃木県栃木市泉町１−１１",
     "partialMatch": false
   },
+  "栃木市泉町18-2": {
+    "lat": 36.3846932,
+    "lng": 139.7353765,
+    "locationType": "ROOFTOP",
+    "formatted": "日本、〒328-0014 栃木県栃木市泉町１８−２",
+    "partialMatch": false
+  },
   "栃木市泉町18-6": {
     "lat": 36.3851669,
     "lng": 139.7354673,

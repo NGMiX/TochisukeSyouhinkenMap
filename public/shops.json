@@ -1,6 +1,6 @@
 {
-  "sourceLabel": "R8.9.01時点",
-  "importedAt": "2026-09-02",
+  "sourceLabel": "R8.9.16時点",
+  "importedAt": "2026-09-16",
   "shops": [
     {"name":"104school&life","kana":"イチマルヨンスクールアンドライフ","address":"栃木市大平町富田6-13","tel":"070-4500-0104","category":"C","area":"ohira","isLarge":false,"lat":36.3331126,"lng":139.7047265},
     {"name":"373 Chinese kitchen","kana":"サンナナサンチャニーズキッチン","address":"栃木市平柳町3-43-7","tel":"0282-80-9474","category":"E","area":"tochigi","isLarge":false,"lat":36.3955221,"lng":139.7448817},
@@ -323,6 +323,7 @@
     {"name":"ビューティサロンかやはら","kana":"ビューティサロンカヤハラ","address":"栃木市沼和田町4-30","tel":"0282-24-2123","category":"F","area":"tochigi","isLarge":false,"lat":36.371144199999996,"lng":139.7337287},
     {"name":"ビューティサロンサチ","kana":"ビューティサロンサチ","address":"栃木市祝町3-16","tel":"0282-23-7305","category":"F","area":"tochigi","isLarge":false,"lat":36.3805659,"lng":139.7254775},
     {"name":"ビューティショップくろかわ","kana":"ビューティショップクロカワ","address":"栃木市大宮町2266-1","tel":"0282-27-5147","category":"C","area":"tochigi","isLarge":false,"lat":36.401644999999995,"lng":139.754831},
+    {"name":"ピザッツ蔵の街大通り店","kana":"ピザッツクラノマチオオドオリテン","address":"栃木市泉町18-2","tel":"0282-22-3333","category":"E","area":"tochigi","isLarge":false,"lat":36.384746799999995,"lng":139.73538639999998},
     {"name":"ファッションセンターしまむら岩舟店","kana":"ファッションセンターシマムライワフネテン","address":"栃木市岩舟町静1159-1","tel":"0282-54-1003","category":"C","area":"iwafune","isLarge":true,"lat":36.3192971,"lng":139.6631893},
     {"name":"ファッションセンターしまむら栃木店","kana":"ファッションセンターシマムラトチギテン","address":"栃木市片柳町2-17-1","tel":"0282-20-1361","category":"C","area":"tochigi","isLarge":true,"lat":36.3700624,"lng":139.71914239999998},
     {"name":"ファッションセンターしまむら藤岡店","kana":"ファッションセンターシマムラフジオカテン","address":"栃木市藤岡町藤岡1166-1","tel":"0282-61-1002","category":"C","area":"fujioka","isLarge":true,"lat":36.2599564,"lng":139.6520244},
