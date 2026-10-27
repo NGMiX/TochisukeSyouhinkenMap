@@ -484,7 +484,23 @@ body {
   text-align: left;
 }
 
+/* 商品券の利用終了の知らせ。券の黄・青と紛れないよう、注意の赤系で枠を付ける。 */
+.notice-ended {
+  margin: 0.75rem 1rem 0;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  text-align: left;
+  color: var(--text);
+  border-color: #f2b8b5;
+  border-left: 4px solid #b42318;
+}
+
 @media (prefers-color-scheme: dark) {
+  .notice-ended {
+    border-color: #6b2b26;
+    border-left-color: #ff9a94;
+  }
+
   .notice-error {
     color: #ff9a94;
     border-color: #6b2b26;

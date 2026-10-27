@@ -178,6 +178,18 @@ export function ShopFinder() {
         </div>
       </header>
 
+      {/*
+        商品券の利用は 2026 年 10 月末で終わった。地図と一覧は残すので、利用者が
+        「使える店」と誤解しないよう常に出す。sticky ヘッダーの外に置くのは、
+        スクロールで流して一覧の表示領域を食わないため。静的 HTML にも焼かれるので、
+        JS が動かない古い端末にも届く。
+      */}
+      <p className="notice notice-ended" role="note">
+        <strong>とち介商品券は、10月末でご利用いただけなくなりました。</strong>
+        <br />
+        地図と加盟店の一覧は、引き続きご覧いただけます。
+      </p>
+
       {/* id は layout.tsx の見張りが掴む。外すと古い端末に理由が出なくなる。 */}
       {state.status === 'loading' && (
         <p className="notice" id="boot-notice">
