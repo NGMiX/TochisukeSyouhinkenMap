@@ -185,9 +185,9 @@ export function ShopFinder() {
         JS が動かない古い端末にも届く。
       */}
       <p className="notice notice-ended" role="note">
-        <strong>とち介商品券は、10月末でご利用いただけなくなりました。</strong>
+        <strong>とち介商品券は、10月末でご利用できなくなっております。</strong>
         <br />
-        地図と加盟店の一覧は、引き続きご覧いただけます。
+        このサイトはアプリケーションのデモとして、引き続き御覧いただけます。
       </p>
 
       {/* id は layout.tsx の見張りが掴む。外すと古い端末に理由が出なくなる。 */}
